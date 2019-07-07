@@ -1,0 +1,975 @@
+﻿{
+    "Item": {
+        "Name": "Project",
+        "Size": 0,
+        "CompressedSize": 0
+    },
+    "Children": [{
+        "Item": {
+            "Name": "Runtime",
+            "Size": 0,
+            "CompressedSize": 0
+        },
+        "Children": [{
+            "Item": {
+                "Name": "TinyExport/MatchThree/html5/development/build/runtime.js",
+                "Size": 5750849,
+                "CompressedSize": 719636
+            }
+        }]
+    }, {
+        "Item": {
+            "Name": "Assets",
+            "Size": 0,
+            "CompressedSize": 0
+        },
+        "Children": [{
+            "Item": {
+                "Name": "JavaScript",
+                "Size": 523509,
+                "CompressedSize": 0
+            }
+        }, {
+            "Item": {
+                "Name": "Assets/TinySamples/MatchThree/Audio/Music/Level 01.mp3",
+                "Size": 0,
+                "CompressedSize": 0,
+                "Object": { "$TypeId": 10, "Guid": "95ecb3a7bb0f63645985b9d985c1b6be", "FileId": 8300000, "Type": 3 }
+            },
+            "Children": [{
+                "Item": {
+                    "Name": "TinyExport/MatchThree/html5/development/artifacts/assets/Level 01.mp3",
+                    "Size": 151062,
+                    "CompressedSize": 142770,
+                    "Object": { "$TypeId": 10, "Guid": "95ecb3a7bb0f63645985b9d985c1b6be", "FileId": 8300000, "Type": 3 }
+                }
+            }]
+        }, {
+            "Item": {
+                "Name": "Assets/TinySamples/MatchThree/Audio/Music/Level 02.mp3",
+                "Size": 0,
+                "CompressedSize": 0,
+                "Object": { "$TypeId": 10, "Guid": "6dccb1a4df16b1d418eeaf152f1e6f0c", "FileId": 8300000, "Type": 3 }
+            },
+            "Children": [{
+                "Item": {
+                    "Name": "TinyExport/MatchThree/html5/development/artifacts/assets/Level 02.mp3",
+                    "Size": 151062,
+                    "CompressedSize": 143683,
+                    "Object": { "$TypeId": 10, "Guid": "6dccb1a4df16b1d418eeaf152f1e6f0c", "FileId": 8300000, "Type": 3 }
+                }
+            }]
+        }, {
+            "Item": {
+                "Name": "Assets/TinySamples/MatchThree/Audio/Music/Level 03.mp3",
+                "Size": 0,
+                "CompressedSize": 0,
+                "Object": { "$TypeId": 10, "Guid": "6c2323538f3242042bedc8c463c7e36c", "FileId": 8300000, "Type": 3 }
+            },
+            "Children": [{
+                "Item": {
+                    "Name": "TinyExport/MatchThree/html5/development/artifacts/assets/Level 03.mp3",
+                    "Size": 294729,
+                    "CompressedSize": 286465,
+                    "Object": { "$TypeId": 10, "Guid": "6c2323538f3242042bedc8c463c7e36c", "FileId": 8300000, "Type": 3 }
+                }
+            }]
+        }, {
+            "Item": {
+                "Name": "Assets/TinySamples/MatchThree/Audio/Music/Menu.mp3",
+                "Size": 0,
+                "CompressedSize": 0,
+                "Object": { "$TypeId": 10, "Guid": "8fdbe7f967b8b7d419126298df7c9501", "FileId": 8300000, "Type": 3 }
+            },
+            "Children": [{
+                "Item": {
+                    "Name": "TinyExport/MatchThree/html5/development/artifacts/assets/Menu.mp3",
+                    "Size": 151062,
+                    "CompressedSize": 142868,
+                    "Object": { "$TypeId": 10, "Guid": "8fdbe7f967b8b7d419126298df7c9501", "FileId": 8300000, "Type": 3 }
+                }
+            }]
+        }, {
+            "Item": {
+                "Name": "Assets/TinySamples/MatchThree/Audio/CellMatched.mp3",
+                "Size": 0,
+                "CompressedSize": 0,
+                "Object": { "$TypeId": 10, "Guid": "cc15028a65208f44ca21af9c0126219b", "FileId": 8300000, "Type": 3 }
+            },
+            "Children": [{
+                "Item": {
+                    "Name": "TinyExport/MatchThree/html5/development/artifacts/assets/CellMatched.mp3",
+                    "Size": 16709,
+                    "CompressedSize": 10120,
+                    "Object": { "$TypeId": 10, "Guid": "cc15028a65208f44ca21af9c0126219b", "FileId": 8300000, "Type": 3 }
+                }
+            }]
+        }, {
+            "Item": {
+                "Name": "Assets/TinySamples/MatchThree/Audio/CellSwap.mp3",
+                "Size": 0,
+                "CompressedSize": 0,
+                "Object": { "$TypeId": 10, "Guid": "16c3057de6a219e4f99ab8a2013d1f2c", "FileId": 8300000, "Type": 3 }
+            },
+            "Children": [{
+                "Item": {
+                    "Name": "TinyExport/MatchThree/html5/development/artifacts/assets/CellSwap.mp3",
+                    "Size": 12013,
+                    "CompressedSize": 2922,
+                    "Object": { "$TypeId": 10, "Guid": "16c3057de6a219e4f99ab8a2013d1f2c", "FileId": 8300000, "Type": 3 }
+                }
+            }]
+        }, {
+            "Item": {
+                "Name": "Assets/TinySamples/MatchThree/Audio/GameStarted.mp3",
+                "Size": 0,
+                "CompressedSize": 0,
+                "Object": { "$TypeId": 10, "Guid": "6ce2896f899d5034fad12b046f4e2349", "FileId": 8300000, "Type": 3 }
+            },
+            "Children": [{
+                "Item": {
+                    "Name": "TinyExport/MatchThree/html5/development/artifacts/assets/GameStarted.mp3",
+                    "Size": 15144,
+                    "CompressedSize": 7713,
+                    "Object": { "$TypeId": 10, "Guid": "6ce2896f899d5034fad12b046f4e2349", "FileId": 8300000, "Type": 3 }
+                }
+            }]
+        }, {
+            "Item": {
+                "Name": "Assets/TinySamples/MatchThree/Audio/GenericClick.mp3",
+                "Size": 0,
+                "CompressedSize": 0,
+                "Object": { "$TypeId": 10, "Guid": "36692b72ec7c7d446a2c34c4b071bb85", "FileId": 8300000, "Type": 3 }
+            },
+            "Children": [{
+                "Item": {
+                    "Name": "TinyExport/MatchThree/html5/development/artifacts/assets/GenericClick.mp3",
+                    "Size": 8258,
+                    "CompressedSize": 1686,
+                    "Object": { "$TypeId": 10, "Guid": "36692b72ec7c7d446a2c34c4b071bb85", "FileId": 8300000, "Type": 3 }
+                }
+            }]
+        }, {
+            "Item": {
+                "Name": "Assets/TinySamples/MatchThree/Audio/Destruction2.mp3",
+                "Size": 0,
+                "CompressedSize": 0,
+                "Object": { "$TypeId": 10, "Guid": "d047982a4a0c19843b5ab6d2e6ed609c", "FileId": 8300000, "Type": 3 }
+            },
+            "Children": [{
+                "Item": {
+                    "Name": "TinyExport/MatchThree/html5/development/artifacts/assets/Destruction2.mp3",
+                    "Size": 48901,
+                    "CompressedSize": 47482,
+                    "Object": { "$TypeId": 10, "Guid": "d047982a4a0c19843b5ab6d2e6ed609c", "FileId": 8300000, "Type": 3 }
+                }
+            }]
+        }, {
+            "Item": {
+                "Name": "Assets/TinySamples/MatchThree/Audio/Destruction1.mp3",
+                "Size": 0,
+                "CompressedSize": 0,
+                "Object": { "$TypeId": 10, "Guid": "d46bb3516df6480448a4f60467aac88b", "FileId": 8300000, "Type": 3 }
+            },
+            "Children": [{
+                "Item": {
+                    "Name": "TinyExport/MatchThree/html5/development/artifacts/assets/Destruction1.mp3",
+                    "Size": 48901,
+                    "CompressedSize": 47347,
+                    "Object": { "$TypeId": 10, "Guid": "d46bb3516df6480448a4f60467aac88b", "FileId": 8300000, "Type": 3 }
+                }
+            }]
+        }, {
+            "Item": {
+                "Name": "Assets/TinySamples/MatchThree/Audio/Lazer.mp3",
+                "Size": 0,
+                "CompressedSize": 0,
+                "Object": { "$TypeId": 10, "Guid": "89d54ed765c089742b11bb8834b3dd5b", "FileId": 8300000, "Type": 3 }
+            },
+            "Children": [{
+                "Item": {
+                    "Name": "TinyExport/MatchThree/html5/development/artifacts/assets/Lazer.mp3",
+                    "Size": 31733,
+                    "CompressedSize": 24882,
+                    "Object": { "$TypeId": 10, "Guid": "89d54ed765c089742b11bb8834b3dd5b", "FileId": 8300000, "Type": 3 }
+                }
+            }]
+        }, {
+            "Item": {
+                "Name": "Assets/TinySamples/MatchThree/Audio/Slash.mp3",
+                "Size": 0,
+                "CompressedSize": 0,
+                "Object": { "$TypeId": 10, "Guid": "7705651e95507fe498ebd9d3cde69ce5", "FileId": 8300000, "Type": 3 }
+            },
+            "Children": [{
+                "Item": {
+                    "Name": "TinyExport/MatchThree/html5/development/artifacts/assets/Slash.mp3",
+                    "Size": 30208,
+                    "CompressedSize": 15514,
+                    "Object": { "$TypeId": 10, "Guid": "7705651e95507fe498ebd9d3cde69ce5", "FileId": 8300000, "Type": 3 }
+                }
+            }]
+        }, {
+            "Item": {
+                "Name": "Assets/TinySamples/MatchThree/Textures/empty.png",
+                "Size": 0,
+                "CompressedSize": 0,
+                "Object": { "$TypeId": 10, "Guid": "7c8b098db6e09cf45aa7ad310c4ac9b7", "FileId": 2800000, "Type": 3 }
+            },
+            "Children": [{
+                "Item": {
+                    "Name": "TinyExport/MatchThree/html5/development/artifacts/assets/empty.png",
+                    "Size": 228,
+                    "CompressedSize": 199,
+                    "Object": { "$TypeId": 10, "Guid": "7c8b098db6e09cf45aa7ad310c4ac9b7", "FileId": 2800000, "Type": 3 }
+                }
+            }]
+        }, {
+            "Item": {
+                "Name": "Assets/TinySamples/MatchThree/Textures/blank.jpg",
+                "Size": 0,
+                "CompressedSize": 0,
+                "Object": { "$TypeId": 10, "Guid": "b96df6734f31cf842b7171a7cb7768d9", "FileId": 2800000, "Type": 3 }
+            },
+            "Children": [{
+                "Item": {
+                    "Name": "TinyExport/MatchThree/html5/development/artifacts/assets/blank.jpg",
+                    "Size": 380,
+                    "CompressedSize": 216,
+                    "Object": { "$TypeId": 10, "Guid": "b96df6734f31cf842b7171a7cb7768d9", "FileId": 2800000, "Type": 3 }
+                }
+            }]
+        }, {
+            "Item": {
+                "Name": "Assets/TinySamples/MatchThree/Fonts/PixellariExtended.asset",
+                "Size": 0,
+                "CompressedSize": 0,
+                "Object": { "$TypeId": 10, "Guid": "f7fdd39164ea67a4f839f1aa793a2e11", "FileId": 11400000, "Type": 2 }
+            },
+            "Children": [{
+                "Item": {
+                    "Name": "TinyExport/MatchThree/html5/development/artifacts/assets/PixellariExtended.png",
+                    "Size": 48668,
+                    "CompressedSize": 36363,
+                    "Object": { "$TypeId": 10, "Guid": "f7fdd39164ea67a4f839f1aa793a2e11", "FileId": 11400000, "Type": 2 }
+                }
+            }]
+        }, {
+            "Item": {
+                "Name": "Assets/TinySamples/MatchThree/Textures/MadeWithUnity.png",
+                "Size": 0,
+                "CompressedSize": 0,
+                "Object": { "$TypeId": 10, "Guid": "d3f0d9452010f0a469710be0a3612c70", "FileId": 2800000, "Type": 3 }
+            },
+            "Children": [{
+                "Item": {
+                    "Name": "TinyExport/MatchThree/html5/development/artifacts/assets/MadeWithUnity.png",
+                    "Size": 14392,
+                    "CompressedSize": 10778,
+                    "Object": { "$TypeId": 10, "Guid": "d3f0d9452010f0a469710be0a3612c70", "FileId": 2800000, "Type": 3 }
+                }
+            }]
+        }, {
+            "Item": {
+                "Name": "sactx-512x512-Uncompressed-Cutscene-408c3ca0",
+                "Size": 0,
+                "CompressedSize": 0
+            },
+            "Children": [{
+                "Item": {
+                    "Name": "TinyExport/MatchThree/html5/development/artifacts/assets/sactx-512x512-Uncompressed-Cutscene-408c3ca0.png",
+                    "Size": 58440,
+                    "CompressedSize": 43640,
+                    "Object": { "$TypeId": 10, "Guid": "00000000000000000000000000000000", "FileId": 2, "Type": 0 }
+                }
+            }]
+        }, {
+            "Item": {
+                "Name": "sactx-256x512-Uncompressed-CutsceneEnd-4e8f3714",
+                "Size": 0,
+                "CompressedSize": 0
+            },
+            "Children": [{
+                "Item": {
+                    "Name": "TinyExport/MatchThree/html5/development/artifacts/assets/sactx-256x512-Uncompressed-CutsceneEnd-4e8f3714.png",
+                    "Size": 31724,
+                    "CompressedSize": 23361,
+                    "Object": { "$TypeId": 10, "Guid": "00000000000000000000000000000000", "FileId": 2, "Type": 0 }
+                }
+            }]
+        }, {
+            "Item": {
+                "Name": "sactx-1024x1024-Uncompressed-Dinosaur-62e48977",
+                "Size": 0,
+                "CompressedSize": 0
+            },
+            "Children": [{
+                "Item": {
+                    "Name": "TinyExport/MatchThree/html5/development/artifacts/assets/sactx-1024x1024-Uncompressed-Dinosaur-62e48977.png",
+                    "Size": 273440,
+                    "CompressedSize": 204850,
+                    "Object": { "$TypeId": 10, "Guid": "00000000000000000000000000000000", "FileId": 2, "Type": 0 }
+                }
+            }]
+        }, {
+            "Item": {
+                "Name": "sactx-256x128-Uncompressed-UICommon-8b5f898d",
+                "Size": 0,
+                "CompressedSize": 0
+            },
+            "Children": [{
+                "Item": {
+                    "Name": "TinyExport/MatchThree/html5/development/artifacts/assets/sactx-256x128-Uncompressed-UICommon-8b5f898d.png",
+                    "Size": 12776,
+                    "CompressedSize": 9669,
+                    "Object": { "$TypeId": 10, "Guid": "00000000000000000000000000000000", "FileId": 2, "Type": 0 }
+                }
+            }]
+        }, {
+            "Item": {
+                "Name": "sactx-128x256-Uncompressed-CommonEnvironment-2db82583",
+                "Size": 0,
+                "CompressedSize": 0
+            },
+            "Children": [{
+                "Item": {
+                    "Name": "TinyExport/MatchThree/html5/development/artifacts/assets/sactx-128x256-Uncompressed-CommonEnvironment-2db82583.png",
+                    "Size": 13080,
+                    "CompressedSize": 9925,
+                    "Object": { "$TypeId": 10, "Guid": "00000000000000000000000000000000", "FileId": 2, "Type": 0 }
+                }
+            }]
+        }, {
+            "Item": {
+                "Name": "sactx-256x256-Uncompressed-CityEnvironment-4ae2d193",
+                "Size": 0,
+                "CompressedSize": 0
+            },
+            "Children": [{
+                "Item": {
+                    "Name": "TinyExport/MatchThree/html5/development/artifacts/assets/sactx-256x256-Uncompressed-CityEnvironment-4ae2d193.png",
+                    "Size": 23112,
+                    "CompressedSize": 17526,
+                    "Object": { "$TypeId": 10, "Guid": "00000000000000000000000000000000", "FileId": 2, "Type": 0 }
+                }
+            }]
+        }, {
+            "Item": {
+                "Name": "sactx-256x256-Uncompressed-FarmEnvironment-ceadfc07",
+                "Size": 0,
+                "CompressedSize": 0
+            },
+            "Children": [{
+                "Item": {
+                    "Name": "TinyExport/MatchThree/html5/development/artifacts/assets/sactx-256x256-Uncompressed-FarmEnvironment-ceadfc07.png",
+                    "Size": 21704,
+                    "CompressedSize": 16409,
+                    "Object": { "$TypeId": 10, "Guid": "00000000000000000000000000000000", "FileId": 2, "Type": 0 }
+                }
+            }]
+        }, {
+            "Item": {
+                "Name": "sactx-256x256-Uncompressed-CampEnvironment-9a348366",
+                "Size": 0,
+                "CompressedSize": 0
+            },
+            "Children": [{
+                "Item": {
+                    "Name": "TinyExport/MatchThree/html5/development/artifacts/assets/sactx-256x256-Uncompressed-CampEnvironment-9a348366.png",
+                    "Size": 25952,
+                    "CompressedSize": 19634,
+                    "Object": { "$TypeId": 10, "Guid": "00000000000000000000000000000000", "FileId": 2, "Type": 0 }
+                }
+            }]
+        }, {
+            "Item": {
+                "Name": "sactx-256x128-Uncompressed-Explosions-64b173a4",
+                "Size": 0,
+                "CompressedSize": 0
+            },
+            "Children": [{
+                "Item": {
+                    "Name": "TinyExport/MatchThree/html5/development/artifacts/assets/sactx-256x128-Uncompressed-Explosions-64b173a4.png",
+                    "Size": 9768,
+                    "CompressedSize": 7416,
+                    "Object": { "$TypeId": 10, "Guid": "00000000000000000000000000000000", "FileId": 2, "Type": 0 }
+                }
+            }]
+        }, {
+            "Item": {
+                "Name": "sactx-256x512-Uncompressed-WorldMap-f44511e3",
+                "Size": 0,
+                "CompressedSize": 0
+            },
+            "Children": [{
+                "Item": {
+                    "Name": "TinyExport/MatchThree/html5/development/artifacts/assets/sactx-256x512-Uncompressed-WorldMap-f44511e3.png",
+                    "Size": 23156,
+                    "CompressedSize": 17052,
+                    "Object": { "$TypeId": 10, "Guid": "00000000000000000000000000000000", "FileId": 2, "Type": 0 }
+                }
+            }]
+        }, {
+            "Item": {
+                "Name": "sactx-128x64-DXT5-Cells-f5b75b95",
+                "Size": 0,
+                "CompressedSize": 0
+            },
+            "Children": [{
+                "Item": {
+                    "Name": "TinyExport/MatchThree/html5/development/artifacts/assets/sactx-128x64-DXT5-Cells-f5b75b95.png",
+                    "Size": 1424,
+                    "CompressedSize": 1092,
+                    "Object": { "$TypeId": 10, "Guid": "00000000000000000000000000000000", "FileId": 2, "Type": 0 }
+                }
+            }]
+        }, {
+            "Item": {
+                "Name": "sactx-256x128-Uncompressed-Gems-476e6708",
+                "Size": 0,
+                "CompressedSize": 0
+            },
+            "Children": [{
+                "Item": {
+                    "Name": "TinyExport/MatchThree/html5/development/artifacts/assets/sactx-256x128-Uncompressed-Gems-476e6708.png",
+                    "Size": 16908,
+                    "CompressedSize": 12791,
+                    "Object": { "$TypeId": 10, "Guid": "00000000000000000000000000000000", "FileId": 2, "Type": 0 }
+                }
+            }]
+        }, {
+            "Item": {
+                "Name": "sactx-128x128-Uncompressed-GameUI-189e5958",
+                "Size": 0,
+                "CompressedSize": 0
+            },
+            "Children": [{
+                "Item": {
+                    "Name": "TinyExport/MatchThree/html5/development/artifacts/assets/sactx-128x128-Uncompressed-GameUI-189e5958.png",
+                    "Size": 7932,
+                    "CompressedSize": 6009,
+                    "Object": { "$TypeId": 10, "Guid": "00000000000000000000000000000000", "FileId": 2, "Type": 0 }
+                }
+            }]
+        }, {
+            "Item": {
+                "Name": "sactx-128x128-DXT5-Font-4dfc0c11",
+                "Size": 0,
+                "CompressedSize": 0
+            },
+            "Children": [{
+                "Item": {
+                    "Name": "TinyExport/MatchThree/html5/development/artifacts/assets/sactx-128x128-DXT5-Font-4dfc0c11.png",
+                    "Size": 6080,
+                    "CompressedSize": 4627,
+                    "Object": { "$TypeId": 10, "Guid": "00000000000000000000000000000000", "FileId": 2, "Type": 0 }
+                }
+            }]
+        }, {
+            "Item": {
+                "Name": "sactx-256x256-Uncompressed-MainMenu-b187203e",
+                "Size": 0,
+                "CompressedSize": 0
+            },
+            "Children": [{
+                "Item": {
+                    "Name": "TinyExport/MatchThree/html5/development/artifacts/assets/sactx-256x256-Uncompressed-MainMenu-b187203e.png",
+                    "Size": 34828,
+                    "CompressedSize": 26300,
+                    "Object": { "$TypeId": 10, "Guid": "00000000000000000000000000000000", "FileId": 2, "Type": 0 }
+                }
+            }]
+        }, {
+            "Item": {
+                "Name": "sactx-64x128-Uncompressed-SettingsMenu-d236018a",
+                "Size": 0,
+                "CompressedSize": 0
+            },
+            "Children": [{
+                "Item": {
+                    "Name": "TinyExport/MatchThree/html5/development/artifacts/assets/sactx-64x128-Uncompressed-SettingsMenu-d236018a.png",
+                    "Size": 3380,
+                    "CompressedSize": 2547,
+                    "Object": { "$TypeId": 10, "Guid": "00000000000000000000000000000000", "FileId": 2, "Type": 0 }
+                }
+            }]
+        }]
+    }, {
+        "Item": {
+            "Name": "Code",
+            "Size": 0,
+            "CompressedSize": 0
+        },
+        "Children": [{
+            "Item": {
+                "Name": "TinyExport/MatchThree/html5/development/build/entities.js",
+                "Size": 918228,
+                "CompressedSize": 112699
+            },
+            "Children": [{
+                "Item": {
+                    "Name": "Bootstrap",
+                    "Size": 15852,
+                    "CompressedSize": 2578
+                }
+            }, {
+                "Item": {
+                    "Name": "CutsceneCamera",
+                    "Size": 2192,
+                    "CompressedSize": 672
+                }
+            }, {
+                "Item": {
+                    "Name": "CutscenePartA",
+                    "Size": 21426,
+                    "CompressedSize": 3324
+                }
+            }, {
+                "Item": {
+                    "Name": "CutscenePartB",
+                    "Size": 19973,
+                    "CompressedSize": 2984
+                }
+            }, {
+                "Item": {
+                    "Name": "CutscenePartC",
+                    "Size": 19102,
+                    "CompressedSize": 2877
+                }
+            }, {
+                "Item": {
+                    "Name": "EndCutscenePartA",
+                    "Size": 44959,
+                    "CompressedSize": 5065
+                }
+            }, {
+                "Item": {
+                    "Name": "EndCutscenePartB",
+                    "Size": 6849,
+                    "CompressedSize": 1324
+                }
+            }, {
+                "Item": {
+                    "Name": "Dinosaur",
+                    "Size": 34352,
+                    "CompressedSize": 4324
+                }
+            }, {
+                "Item": {
+                    "Name": "DinosaurLaserAttackBlackCover",
+                    "Size": 6908,
+                    "CompressedSize": 1378
+                }
+            }, {
+                "Item": {
+                    "Name": "Bird",
+                    "Size": 3190,
+                    "CompressedSize": 899
+                }
+            }, {
+                "Item": {
+                    "Name": "BuildingMedium",
+                    "Size": 2019,
+                    "CompressedSize": 685
+                }
+            }, {
+                "Item": {
+                    "Name": "BuildingSmall",
+                    "Size": 2009,
+                    "CompressedSize": 681
+                }
+            }, {
+                "Item": {
+                    "Name": "BuildingSmall2",
+                    "Size": 2021,
+                    "CompressedSize": 684
+                }
+            }, {
+                "Item": {
+                    "Name": "BuildingTall",
+                    "Size": 2001,
+                    "CompressedSize": 682
+                }
+            }, {
+                "Item": {
+                    "Name": "Car1",
+                    "Size": 2099,
+                    "CompressedSize": 713
+                }
+            }, {
+                "Item": {
+                    "Name": "Car2",
+                    "Size": 2094,
+                    "CompressedSize": 707
+                }
+            }, {
+                "Item": {
+                    "Name": "CarSkyFall",
+                    "Size": 2578,
+                    "CompressedSize": 777
+                }
+            }, {
+                "Item": {
+                    "Name": "Cloud1",
+                    "Size": 2339,
+                    "CompressedSize": 734
+                }
+            }, {
+                "Item": {
+                    "Name": "Cloud2",
+                    "Size": 2337,
+                    "CompressedSize": 732
+                }
+            }, {
+                "Item": {
+                    "Name": "Cloud3",
+                    "Size": 2333,
+                    "CompressedSize": 724
+                }
+            }, {
+                "Item": {
+                    "Name": "Explosion1",
+                    "Size": 2708,
+                    "CompressedSize": 690
+                }
+            }, {
+                "Item": {
+                    "Name": "Explosion2",
+                    "Size": 2820,
+                    "CompressedSize": 696
+                }
+            }, {
+                "Item": {
+                    "Name": "FireTruck",
+                    "Size": 3967,
+                    "CompressedSize": 994
+                }
+            }, {
+                "Item": {
+                    "Name": "Floor",
+                    "Size": 1858,
+                    "CompressedSize": 622
+                }
+            }, {
+                "Item": {
+                    "Name": "GameScene",
+                    "Size": 29148,
+                    "CompressedSize": 4747
+                }
+            }, {
+                "Item": {
+                    "Name": "GroundDeco1",
+                    "Size": 2555,
+                    "CompressedSize": 753
+                }
+            }, {
+                "Item": {
+                    "Name": "GroundDeco2",
+                    "Size": 2560,
+                    "CompressedSize": 754
+                }
+            }, {
+                "Item": {
+                    "Name": "GroundDeco3",
+                    "Size": 2560,
+                    "CompressedSize": 754
+                }
+            }, {
+                "Item": {
+                    "Name": "GroundDeco4",
+                    "Size": 2547,
+                    "CompressedSize": 761
+                }
+            }, {
+                "Item": {
+                    "Name": "Helicopter",
+                    "Size": 4000,
+                    "CompressedSize": 1018
+                }
+            }, {
+                "Item": {
+                    "Name": "KidOnBike",
+                    "Size": 5250,
+                    "CompressedSize": 1106
+                }
+            }, {
+                "Item": {
+                    "Name": "Parallax1",
+                    "Size": 2405,
+                    "CompressedSize": 755
+                }
+            }, {
+                "Item": {
+                    "Name": "Parallax2",
+                    "Size": 2410,
+                    "CompressedSize": 753
+                }
+            }, {
+                "Item": {
+                    "Name": "Parallax3",
+                    "Size": 2410,
+                    "CompressedSize": 754
+                }
+            }, {
+                "Item": {
+                    "Name": "Parallax4",
+                    "Size": 2410,
+                    "CompressedSize": 753
+                }
+            }, {
+                "Item": {
+                    "Name": "Parallax5",
+                    "Size": 2410,
+                    "CompressedSize": 754
+                }
+            }, {
+                "Item": {
+                    "Name": "ParticleExplosion",
+                    "Size": 4600,
+                    "CompressedSize": 1149
+                }
+            }, {
+                "Item": {
+                    "Name": "Person",
+                    "Size": 7767,
+                    "CompressedSize": 1353
+                }
+            }, {
+                "Item": {
+                    "Name": "Prop1",
+                    "Size": 1871,
+                    "CompressedSize": 661
+                }
+            }, {
+                "Item": {
+                    "Name": "Prop2",
+                    "Size": 1878,
+                    "CompressedSize": 672
+                }
+            }, {
+                "Item": {
+                    "Name": "Prop3",
+                    "Size": 1877,
+                    "CompressedSize": 670
+                }
+            }, {
+                "Item": {
+                    "Name": "SewerStraight",
+                    "Size": 1946,
+                    "CompressedSize": 627
+                }
+            }, {
+                "Item": {
+                    "Name": "SewerT",
+                    "Size": 1912,
+                    "CompressedSize": 626
+                }
+            }, {
+                "Item": {
+                    "Name": "Cell",
+                    "Size": 2889,
+                    "CompressedSize": 837
+                }
+            }, {
+                "Item": {
+                    "Name": "CollectedEgg",
+                    "Size": 2382,
+                    "CompressedSize": 738
+                }
+            }, {
+                "Item": {
+                    "Name": "DestroyLaserAnimation",
+                    "Size": 2963,
+                    "CompressedSize": 814
+                }
+            }, {
+                "Item": {
+                    "Name": "DestroyLineAnimation",
+                    "Size": 2385,
+                    "CompressedSize": 741
+                }
+            }, {
+                "Item": {
+                    "Name": "ExplodingGem1",
+                    "Size": 5586,
+                    "CompressedSize": 1357
+                }
+            }, {
+                "Item": {
+                    "Name": "ExplodingGem2",
+                    "Size": 5598,
+                    "CompressedSize": 1369
+                }
+            }, {
+                "Item": {
+                    "Name": "Gem",
+                    "Size": 16204,
+                    "CompressedSize": 2394
+                }
+            }, {
+                "Item": {
+                    "Name": "ScoreGainLabel",
+                    "Size": 2542,
+                    "CompressedSize": 792
+                }
+            }, {
+                "Item": {
+                    "Name": "Level1",
+                    "Size": 551,
+                    "CompressedSize": 285
+                }
+            }, {
+                "Item": {
+                    "Name": "Level2",
+                    "Size": 748,
+                    "CompressedSize": 359
+                }
+            }, {
+                "Item": {
+                    "Name": "Level3",
+                    "Size": 671,
+                    "CompressedSize": 332
+                }
+            }, {
+                "Item": {
+                    "Name": "TutorialEggPointer",
+                    "Size": 5495,
+                    "CompressedSize": 1193
+                }
+            }, {
+                "Item": {
+                    "Name": "TutorialHighlight",
+                    "Size": 130863,
+                    "CompressedSize": 18399
+                }
+            }, {
+                "Item": {
+                    "Name": "TutorialMatchPointer",
+                    "Size": 2303,
+                    "CompressedSize": 735
+                }
+            }, {
+                "Item": {
+                    "Name": "TutorialSurvivalPointer",
+                    "Size": 2311,
+                    "CompressedSize": 736
+                }
+            }, {
+                "Item": {
+                    "Name": "CreditsMenu",
+                    "Size": 48307,
+                    "CompressedSize": 7550
+                }
+            }, {
+                "Item": {
+                    "Name": "GameOverMenu",
+                    "Size": 49745,
+                    "CompressedSize": 8096
+                }
+            }, {
+                "Item": {
+                    "Name": "GameUI",
+                    "Size": 52769,
+                    "CompressedSize": 8222
+                }
+            }, {
+                "Item": {
+                    "Name": "LanguagesMenu",
+                    "Size": 31008,
+                    "CompressedSize": 5017
+                }
+            }, {
+                "Item": {
+                    "Name": "Loading",
+                    "Size": 5889,
+                    "CompressedSize": 1379
+                }
+            }, {
+                "Item": {
+                    "Name": "MainMenu",
+                    "Size": 30878,
+                    "CompressedSize": 5101
+                }
+            }, {
+                "Item": {
+                    "Name": "PauseMenu",
+                    "Size": 38092,
+                    "CompressedSize": 6284
+                }
+            }, {
+                "Item": {
+                    "Name": "ScreenTransition",
+                    "Size": 25459,
+                    "CompressedSize": 4214
+                }
+            }, {
+                "Item": {
+                    "Name": "SettingsMenu",
+                    "Size": 53793,
+                    "CompressedSize": 8334
+                }
+            }, {
+                "Item": {
+                    "Name": "SurvivalModeTimeline",
+                    "Size": 11853,
+                    "CompressedSize": 2002
+                }
+            }, {
+                "Item": {
+                    "Name": "WorldMap",
+                    "Size": 88031,
+                    "CompressedSize": 13451
+                }
+            }, {
+                "Item": {
+                    "Name": "WorldMapItem",
+                    "Size": 4535,
+                    "CompressedSize": 1097
+                }
+            }, {
+                "Item": {
+                    "Name": "BackgroundNearDeathWarning",
+                    "Size": 2205,
+                    "CompressedSize": 697
+                }
+            }, {
+                "Item": {
+                    "Name": "CustomLabelCharacter",
+                    "Size": 1729,
+                    "CompressedSize": 563
+                }
+            }]
+        }, {
+            "Item": {
+                "Name": "TinyExport/MatchThree/html5/development/build/bindings.js",
+                "Size": 752454,
+                "CompressedSize": 64939
+            }
+        }, {
+            "Item": {
+                "Name": "Linked Code Files",
+                "Size": 0,
+                "CompressedSize": 0
+            },
+            "Children": [{
+                "Item": {
+                    "Name": "TinyExport/MatchThree/html5/development/artifacts/scripts/tsc-emit.js",
+                    "Size": 305765,
+                    "CompressedSize": 40170
+                }
+            }]
+        }, {
+            "Item": {
+                "Name": "TinyExport/MatchThree/html5/development/build/main.js",
+                "Size": 18114,
+                "CompressedSize": 3466
+            }
+        }, {
+            "Item": {
+                "Name": "TinyExport/MatchThree/html5/development/build/wsclient.js",
+                "Size": 9391,
+                "CompressedSize": 2619
+            }
+        }]
+    }]
+}

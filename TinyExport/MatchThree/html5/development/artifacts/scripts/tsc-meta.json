@@ -1,0 +1,719 @@
+{
+    "Success": true,
+    "Diagnostics": [],
+    "Systems": [
+        {
+            "Name": "AnimateCutsceneSystem",
+            "QualifiedName": "game.AnimateCutsceneSystem",
+            "Description": "",
+            "Source": {
+                "File": "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Cutscenes/AnimateCutsceneSystem.ts",
+                "Line": 6,
+                "Character": 17
+            },
+            "ExecuteAfter": [
+                "ut.Shared.UserCodeEnd"
+            ],
+            "ExecuteBefore": [
+                "ut.Shared.RenderingFence"
+            ]
+        },
+        {
+            "Name": "PerformDinosaurAttackSystem",
+            "QualifiedName": "game.PerformDinosaurAttackSystem",
+            "Description": "",
+            "Source": {
+                "File": "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Dinosaur/PerformDinosaurAttackSystem.ts",
+                "Line": 4,
+                "Character": 17
+            }
+        },
+        {
+            "Name": "CheckMatchSystem",
+            "QualifiedName": "game.CheckMatchSystem",
+            "Description": "Find matches in the gem grid and mark matched gems as so.",
+            "Source": {
+                "File": "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Gem/CheckMatchSystem.ts",
+                "Line": 7,
+                "Character": 17
+            }
+        },
+        {
+            "Name": "RestoreGemSwapSystem",
+            "QualifiedName": "game.RestoreGemSwapSystem",
+            "Description": "Swap gems back after an unsuccesful gem swap match attempt.",
+            "Source": {
+                "File": "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Gem/RestoreGemSwapSystem.ts",
+                "Line": 6,
+                "Character": 17
+            }
+        },
+        {
+            "Name": "ActivateGemPowerUpSystem",
+            "QualifiedName": "game.ActivateGemPowerUpSystem",
+            "Description": "",
+            "Source": {
+                "File": "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Gem/ActivateGemPowerUpSystem.ts",
+                "Line": 8,
+                "Character": 17
+            },
+            "ExecuteAfter": [
+                "game.CheckMatchSystem"
+            ],
+            "ExecuteBefore": [
+                "game.RestoreGemSwapSystem"
+            ]
+        },
+        {
+            "Name": "UpdateScoreSystem",
+            "QualifiedName": "game.UpdateScoreSystem",
+            "Description": "Update the player's score after a gem match.",
+            "Source": {
+                "File": "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Gem/UpdateScoreSystem.ts",
+                "Line": 8,
+                "Character": 17
+            },
+            "ExecuteAfter": [
+                "game.ActivateGemPowerUpSystem"
+            ]
+        },
+        {
+            "Name": "CollectEggSystem",
+            "QualifiedName": "game.CollectEggSystem",
+            "Description": "",
+            "Source": {
+                "File": "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Gem/CollectEggSystem.ts",
+                "Line": 5,
+                "Character": 17
+            },
+            "ExecuteAfter": [
+                "game.ActivateGemPowerUpSystem"
+            ]
+        },
+        {
+            "Name": "DeleteMatchedGemSystem",
+            "QualifiedName": "game.DeleteMatchedGemSystem",
+            "Description": "",
+            "Source": {
+                "File": "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Gem/DeleteMatchedGemSystem.ts",
+                "Line": 7,
+                "Character": 17
+            },
+            "ExecuteAfter": [
+                "game.CollectEggSystem"
+            ],
+            "ExecuteBefore": [
+                "game.RestoreGemSwapSystem"
+            ]
+        },
+        {
+            "Name": "SpawnComboPowerUpSystem",
+            "QualifiedName": "game.SpawnComboPowerUpSystem",
+            "Description": "Spawn special gem bomb power up after the player makes a special match (4-match, 5-match, T-match and L-match).",
+            "Source": {
+                "File": "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Gem/SpawnComboPowerUpSystem.ts",
+                "Line": 12,
+                "Character": 17
+            },
+            "ExecuteAfter": [
+                "game.UpdateScoreSystem"
+            ],
+            "ExecuteBefore": [
+                "game.DeleteMatchedGemSystem",
+                "game.RestoreGemSwapSystem"
+            ]
+        },
+        {
+            "Name": "TriggerDinosaurAttackSystem",
+            "QualifiedName": "game.TriggerDinosaurAttackSystem",
+            "Description": "When the player makes a match, the dinosaur performs an attack.",
+            "Source": {
+                "File": "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Dinosaur/TriggerDinosaurAttackSystem.ts",
+                "Line": 10,
+                "Character": 17
+            },
+            "ExecuteAfter": [
+                "game.ActivateGemPowerUpSystem"
+            ],
+            "ExecuteBefore": [
+                "game.SpawnComboPowerUpSystem"
+            ]
+        },
+        {
+            "Name": "MoveHelicopterSystem",
+            "QualifiedName": "game.MoveHelicopterSystem",
+            "Description": "",
+            "Source": {
+                "File": "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Environment/MoveHelicopterSystem.ts",
+                "Line": 4,
+                "Character": 17
+            }
+        },
+        {
+            "Name": "MovePeopleSystem",
+            "QualifiedName": "game.MovePeopleSystem",
+            "Description": "",
+            "Source": {
+                "File": "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Environment/MovePeopleSystem.ts",
+                "Line": 4,
+                "Character": 17
+            }
+        },
+        {
+            "Name": "MoveScrollingObjectSystem",
+            "QualifiedName": "game.MoveScrollingObjectSystem",
+            "Description": "When the dinosaur moves, it doesn't. Instead, every active ScrollingObject do.",
+            "Source": {
+                "File": "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Environment/MoveScrollingObjectSystem.ts",
+                "Line": 7,
+                "Character": 17
+            }
+        },
+        {
+            "Name": "SpawnHelicopterSystem",
+            "QualifiedName": "game.SpawnHelicopterSystem",
+            "Description": "Spawn an helicopter if none exists.",
+            "Source": {
+                "File": "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Environment/SpawnHelicopterSystem.ts",
+                "Line": 7,
+                "Character": 17
+            }
+        },
+        {
+            "Name": "SpawnKidOnBikeSystem",
+            "QualifiedName": "game.SpawnKidOnBikeSystem",
+            "Description": "",
+            "Source": {
+                "File": "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Environment/SpawnKidOnBikeSystem.ts",
+                "Line": 4,
+                "Character": 17
+            }
+        },
+        {
+            "Name": "SpawnPeopleSystem",
+            "QualifiedName": "game.SpawnPeopleSystem",
+            "Description": "Spawn people characters from the side of buildings",
+            "Source": {
+                "File": "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Environment/SpawnPeopleSystem.ts",
+                "Line": 7,
+                "Character": 17
+            }
+        },
+        {
+            "Name": "SpawnScrollingObjectSystem",
+            "QualifiedName": "game.SpawnScrollingObjectSystem",
+            "Description": "Spawn scrolling objects to fill the screen scenery with repeated tiled objects.",
+            "Source": {
+                "File": "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Environment/SpawnScrollingObjectSystem.ts",
+                "Line": 6,
+                "Character": 17
+            }
+        },
+        {
+            "Name": "UpdateDestructableStateSystem",
+            "QualifiedName": "game.UpdateDestructableStateSystem",
+            "Description": "",
+            "Source": {
+                "File": "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Environment/UpdateDestructableStateSystem.ts",
+                "Line": 4,
+                "Character": 17
+            }
+        },
+        {
+            "Name": "UpdateKidOnBikeSystem",
+            "QualifiedName": "game.UpdateKidOnBikeSystem",
+            "Description": "The kid on his bike makes a wheely animation when the dinosaur makes an attack near him.",
+            "Source": {
+                "File": "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Environment/UpdateKidOnBikeSystem.ts",
+                "Line": 7,
+                "Character": 17
+            }
+        },
+        {
+            "Name": "CheckGameOverSystem",
+            "QualifiedName": "game.CheckGameOverSystem",
+            "Description": "",
+            "Source": {
+                "File": "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Game/CheckGameOverSystem.ts",
+                "Line": 4,
+                "Character": 17
+            }
+        },
+        {
+            "Name": "UpdateGameStateSystem",
+            "QualifiedName": "game.UpdateGameStateSystem",
+            "Description": "",
+            "Source": {
+                "File": "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Game/UpdateGameStateSystem.ts",
+                "Line": 4,
+                "Character": 17
+            }
+        },
+        {
+            "Name": "UpdateSurvivalModeSystem",
+            "QualifiedName": "game.UpdateSurvivalModeSystem",
+            "Description": "",
+            "Source": {
+                "File": "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Game/UpdateSurvivalModeSystem.ts",
+                "Line": 4,
+                "Character": 17
+            }
+        },
+        {
+            "Name": "CreateNewGemBoardSystem",
+            "QualifiedName": "game.CreateNewGemBoardSystem",
+            "Description": "Create the grid cells and the gems at the start of a game.",
+            "Source": {
+                "File": "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Gem/CreateNewGemBoardSystem.ts",
+                "Line": 6,
+                "Character": 17
+            }
+        },
+        {
+            "Name": "ReplenishGemBoardSystem",
+            "QualifiedName": "game.ReplenishGemBoardSystem",
+            "Description": "Create new gems to refill the grid after the player matched and destroyed gems.",
+            "Source": {
+                "File": "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Gem/ReplenishGemBoardSystem.ts",
+                "Line": 9,
+                "Character": 17
+            },
+            "ExecuteAfter": [
+                "game.DeleteMatchedGemSystem",
+                "game.CreateNewGemBoardSystem"
+            ]
+        },
+        {
+            "Name": "FindPossibleMatchSystem",
+            "QualifiedName": "game.FindPossibleMatchSystem",
+            "Description": "Find possible gem swap to create a match and mark these gems as a possible match.\nUsed by the match hint mechanism.",
+            "Source": {
+                "File": "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Gem/FindPossibleMatchSystem.ts",
+                "Line": 9,
+                "Character": 17
+            },
+            "ExecuteAfter": [
+                "game.ReplenishGemBoardSystem"
+            ]
+        },
+        {
+            "Name": "GemFallTweenEndSystem",
+            "QualifiedName": "game.GemFallTweenEndSystem",
+            "Description": "Set gems IsFalling field to false after its falling animation ended.",
+            "Source": {
+                "File": "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Gem/GemFallTweenEndSystem.ts",
+                "Line": 8,
+                "Character": 17
+            },
+            "ExecuteBefore": [
+                "game.CheckMatchSystem"
+            ]
+        },
+        {
+            "Name": "GemSwapTweenEndSystem",
+            "QualifiedName": "game.GemSwapTweenEndSystem",
+            "Description": "Set gems IsSwapping field to false after its swaping animation ended.",
+            "Source": {
+                "File": "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Gem/GemSwapTweenEndSystem.ts",
+                "Line": 8,
+                "Character": 17
+            },
+            "ExecuteBefore": [
+                "game.CheckMatchSystem"
+            ]
+        },
+        {
+            "Name": "PositionGemSystem",
+            "QualifiedName": "game.PositionGemSystem",
+            "Description": "",
+            "Source": {
+                "File": "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Gem/PositionGemSystem.ts",
+                "Line": 6,
+                "Character": 17
+            },
+            "ExecuteAfter": [
+                "ut.Shared.UserCodeEnd"
+            ],
+            "ExecuteBefore": [
+                "ut.Shared.RenderingFence"
+            ]
+        },
+        {
+            "Name": "SpawnGemExplosionSystem",
+            "QualifiedName": "game.SpawnGemExplosionSystem",
+            "Description": "Spawn particle explosions for each gem to destroy on the grid.",
+            "Source": {
+                "File": "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Gem/SpawnGemExplosionSystem.ts",
+                "Line": 9,
+                "Character": 17
+            },
+            "ExecuteAfter": [
+                "game.UpdateScoreSystem"
+            ],
+            "ExecuteBefore": [
+                "game.DeleteMatchedGemSystem"
+            ]
+        },
+        {
+            "Name": "SwapGemSystem",
+            "QualifiedName": "game.SwapGemSystem",
+            "Description": "Swap the clicked or dragged gems with another one.",
+            "Source": {
+                "File": "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Gem/SwapGemSystem.ts",
+                "Line": 8,
+                "Character": 17
+            },
+            "ExecuteBefore": [
+                "game.CheckMatchSystem"
+            ]
+        },
+        {
+            "Name": "UpdateDestroyLineAnimation",
+            "QualifiedName": "game.UpdateDestroyLineAnimation",
+            "Description": "Update the dinosaur claw/stratch animation and the laser gem destroy animations.",
+            "Source": {
+                "File": "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Gem/UpdateDestroyLineAnimation.ts",
+                "Line": 9,
+                "Character": 17
+            },
+            "ExecuteAfter": [
+                "ut.Shared.UserCodeEnd"
+            ],
+            "ExecuteBefore": [
+                "ut.Shared.RenderingFence"
+            ]
+        },
+        {
+            "Name": "UpdateGemVisualSystem",
+            "QualifiedName": "game.UpdateGemVisualSystem",
+            "Description": "",
+            "Source": {
+                "File": "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Gem/UpdateGemVisualSystem.ts",
+                "Line": 6,
+                "Character": 17
+            },
+            "ExecuteAfter": [
+                "ut.Shared.UserCodeEnd"
+            ],
+            "ExecuteBefore": [
+                "ut.Shared.RenderingFence"
+            ]
+        },
+        {
+            "Name": "UpdateScoreGainLabel",
+            "QualifiedName": "game.UpdateScoreGainLabel",
+            "Description": "Update the gem match flying score gain label animation.",
+            "Source": {
+                "File": "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Gem/UpdateScoreGainLabel.ts",
+                "Line": 7,
+                "Character": 17
+            }
+        },
+        {
+            "Name": "ChangeSkinSystem",
+            "QualifiedName": "game.ChangeSkinSystem",
+            "Description": "",
+            "Source": {
+                "File": "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Skins/ChangeSkinSystem.ts",
+                "Line": 4,
+                "Character": 17
+            }
+        },
+        {
+            "Name": "UpdateEggTutorialSystem",
+            "QualifiedName": "game.UpdateEggTutorialSystem",
+            "Description": "",
+            "Source": {
+                "File": "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Tutorial/UpdateEggTutorialSystem.ts",
+                "Line": 4,
+                "Character": 17
+            }
+        },
+        {
+            "Name": "UpdateMatchTutorialSystem",
+            "QualifiedName": "game.UpdateMatchTutorialSystem",
+            "Description": "",
+            "Source": {
+                "File": "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Tutorial/UpdateMatchTutorialSystem.ts",
+                "Line": 4,
+                "Character": 17
+            }
+        },
+        {
+            "Name": "UpdateSurvivalTutorialSystem",
+            "QualifiedName": "game.UpdateSurvivalTutorialSystem",
+            "Description": "",
+            "Source": {
+                "File": "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Tutorial/UpdateSurvivalTutorialSystem.ts",
+                "Line": 4,
+                "Character": 17
+            }
+        },
+        {
+            "Name": "UpdateTutorialHighlightSystem",
+            "QualifiedName": "game.UpdateTutorialHighlightSystem",
+            "Description": "",
+            "Source": {
+                "File": "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Tutorial/UpdateTutorialHighlightSystem.ts",
+                "Line": 4,
+                "Character": 17
+            }
+        },
+        {
+            "Name": "UpdateTutorialPointerSystem",
+            "QualifiedName": "game.UpdateTutorialPointerSystem",
+            "Description": "",
+            "Source": {
+                "File": "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Tutorial/UpdateTutorialPointerSystem.ts",
+                "Line": 4,
+                "Character": 17
+            }
+        },
+        {
+            "Name": "AnimatePopupSystem",
+            "QualifiedName": "game.AnimatePopupSystem",
+            "Description": "Update popup animation on show.",
+            "Source": {
+                "File": "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/UI/AnimatePopupSystem.ts",
+                "Line": 9,
+                "Character": 17
+            },
+            "ExecuteAfter": [
+                "ut.Shared.UserCodeEnd"
+            ],
+            "ExecuteBefore": [
+                "ut.Shared.RenderingFence"
+            ]
+        },
+        {
+            "Name": "DisplayScoreSystem",
+            "QualifiedName": "game.DisplayScoreSystem",
+            "Description": "Refresh the current score label when it changes.",
+            "Source": {
+                "File": "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/UI/DisplayScoreSystem.ts",
+                "Line": 7,
+                "Character": 17
+            }
+        },
+        {
+            "Name": "UpdateCurrentWorldMapItemSystem",
+            "QualifiedName": "game.UpdateCurrentWorldMapItemSystem",
+            "Description": "",
+            "Source": {
+                "File": "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/UI/UpdateCurrentWorldMapItemSystem.ts",
+                "Line": 4,
+                "Character": 17
+            }
+        },
+        {
+            "Name": "UpdateScreenTransition",
+            "QualifiedName": "game.UpdateScreenTransition",
+            "Description": "Update the screen transition animation played between game state changes.",
+            "Source": {
+                "File": "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/UI/UpdateScreenTransition.ts",
+                "Line": 9,
+                "Character": 17
+            },
+            "ExecuteAfter": [
+                "ut.Shared.UserCodeEnd"
+            ],
+            "ExecuteBefore": [
+                "ut.Shared.RenderingFence"
+            ]
+        },
+        {
+            "Name": "AnimateCollectedCurrencySystem",
+            "QualifiedName": "game.AnimateCollectedCurrencySystem",
+            "Description": "Animate collected currencies (eggs) from collected position to an end (UI) position.",
+            "Source": {
+                "File": "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Utilities/AnimateCollectedCurrencySystem.ts",
+                "Line": 7,
+                "Character": 17
+            }
+        },
+        {
+            "Name": "AnimateNearDeathOpacitySystem",
+            "QualifiedName": "game.AnimateNearDeathOpacitySystem",
+            "Description": "Animate sprite opacity to create a warning pulse animation when the user is close to the end of the game.",
+            "Source": {
+                "File": "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Utilities/AnimateNearDeathOpacitySystem.ts",
+                "Line": 7,
+                "Character": 17
+            }
+        },
+        {
+            "Name": "AnimateShakeSystem",
+            "QualifiedName": "game.AnimateShakeSystem",
+            "Description": "Animate a shake effect on a Transform.",
+            "Source": {
+                "File": "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Utilities/AnimateShakeSystem.ts",
+                "Line": 7,
+                "Character": 17
+            }
+        },
+        {
+            "Name": "AnimateTilingBackgroundSystem",
+            "QualifiedName": "game.AnimateTilingBackgroundSystem",
+            "Description": "Make a tiled background that moves and repeats itself endlessly.",
+            "Source": {
+                "File": "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Utilities/AnimateTilingBackgroundSystem.ts",
+                "Line": 7,
+                "Character": 17
+            }
+        },
+        {
+            "Name": "DestroyAfterDelaySystem",
+            "QualifiedName": "game.DestroyAfterDelaySystem",
+            "Description": "Destroy an entity after a delay of time.",
+            "Source": {
+                "File": "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Utilities/DestroyAfterDelaySystem.ts",
+                "Line": 7,
+                "Character": 17
+            }
+        },
+        {
+            "Name": "FitScreenLayoutSystem",
+            "QualifiedName": "game.FitScreenLayoutSystem",
+            "Description": "Adjust screen layout to fit any aspect ratio.",
+            "Source": {
+                "File": "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Utilities/FitScreenLayoutSystem.ts",
+                "Line": 7,
+                "Character": 17
+            }
+        },
+        {
+            "Name": "RenderModeSelector",
+            "QualifiedName": "game.RenderModeSelector",
+            "Description": "",
+            "Source": {
+                "File": "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Utilities/RenderModeSelector.ts",
+                "Line": 4,
+                "Character": 13
+            }
+        },
+        {
+            "Name": "UpdateCustomButtonSystem",
+            "QualifiedName": "game.UpdateCustomButtonSystem",
+            "Description": "Update the sprite and other visual elements of buttons depending on their current state.",
+            "Source": {
+                "File": "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Utilities/UpdateCustomButtonSystem.ts",
+                "Line": 7,
+                "Character": 17
+            }
+        },
+        {
+            "Name": "UpdateLocalizedText",
+            "QualifiedName": "game.UpdateLocalizedText",
+            "Description": "Update the localized text associated to labels.",
+            "Source": {
+                "File": "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Utilities/UpdateLocalizedText.ts",
+                "Line": 6,
+                "Character": 17
+            }
+        }
+    ],
+    "Filters": [],
+    "Behaviours": [],
+    "Performance": [
+        {
+            "Key": "tsconfig",
+            "Description": "Time taken to read and parse the given tsconfig.json file",
+            "Duration": 193,
+            "Steps": 1
+        },
+        {
+            "Key": "checksum",
+            "Description": "Time taken to compute the MD5 of all inputs",
+            "Duration": 268,
+            "Steps": 1
+        },
+        {
+            "Key": "compile",
+            "Description": "Time taken to compile the TypeScript program",
+            "Duration": 2412,
+            "Steps": 73
+        },
+        {
+            "Key": "emit",
+            "Description": "Time taken to generate and write the JavaScript output",
+            "Duration": 1075,
+            "Steps": 2
+        },
+        {
+            "Key": "metadata",
+            "Description": "Time taken to reflect Tiny metadata from the compiled program",
+            "Duration": 25,
+            "Steps": 52
+        }
+    ],
+    "SourceFiles": [
+        "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Cutscenes/AnimateCutsceneSystem.ts",
+        "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Dinosaur/DinosaurService.ts",
+        "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Dinosaur/PerformDinosaurAttackSystem.ts",
+        "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Gem/CheckMatchSystem.ts",
+        "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Gem/RestoreGemSwapSystem.ts",
+        "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Gem/ActivateGemPowerUpSystem.ts",
+        "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Gem/UpdateScoreSystem.ts",
+        "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Gem/CollectEggSystem.ts",
+        "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Gem/DeleteMatchedGemSystem.ts",
+        "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Gem/SpawnComboPowerUpSystem.ts",
+        "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Dinosaur/TriggerDinosaurAttackSystem.ts",
+        "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Environment/MoveHelicopterSystem.ts",
+        "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Environment/MovePeopleSystem.ts",
+        "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Environment/MoveScrollingObjectSystem.ts",
+        "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Environment/SpawnHelicopterSystem.ts",
+        "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Environment/SpawnKidOnBikeSystem.ts",
+        "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Environment/SpawnPeopleSystem.ts",
+        "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Environment/SpawnScrollingObjectSystem.ts",
+        "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Environment/UpdateDestructableStateSystem.ts",
+        "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Environment/UpdateKidOnBikeSystem.ts",
+        "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Game/CheckGameOverSystem.ts",
+        "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Game/GameService.ts",
+        "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Game/GameStateLoadingService.ts",
+        "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Game/GameStateUpdateService.ts",
+        "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Game/UpdateGameStateSystem.ts",
+        "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Game/UpdateSurvivalModeSystem.ts",
+        "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Gem/CreateNewGemBoardSystem.ts",
+        "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Gem/ReplenishGemBoardSystem.ts",
+        "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Gem/FindPossibleMatchSystem.ts",
+        "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Gem/GemFallTweenEndSystem.ts",
+        "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Gem/GemService.ts",
+        "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Gem/GemSwapTweenEndSystem.ts",
+        "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Gem/PositionGemSystem.ts",
+        "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Gem/SpawnGemExplosionSystem.ts",
+        "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Gem/SwapGemSystem.ts",
+        "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Gem/UpdateDestroyLineAnimation.ts",
+        "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Gem/UpdateGemVisualSystem.ts",
+        "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Gem/UpdateScoreGainLabel.ts",
+        "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Grid/GridService.ts",
+        "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Skins/ChangeSkinSystem.ts",
+        "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Skins/SkinService.ts",
+        "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Tutorial/TutorialService.ts",
+        "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Tutorial/UpdateEggTutorialSystem.ts",
+        "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Tutorial/UpdateMatchTutorialSystem.ts",
+        "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Tutorial/UpdateSurvivalTutorialSystem.ts",
+        "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Tutorial/UpdateTutorialHighlightSystem.ts",
+        "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Tutorial/UpdateTutorialPointerSystem.ts",
+        "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/UI/AnimatePopupSystem.ts",
+        "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/UI/DisplayScoreSystem.ts",
+        "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/UI/UpdateCurrentWorldMapItemSystem.ts",
+        "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/UI/UpdateScreenTransition.ts",
+        "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Utilities/AnimateCollectedCurrencySystem.ts",
+        "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Utilities/AnimateNearDeathOpacitySystem.ts",
+        "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Utilities/AnimateShakeSystem.ts",
+        "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Utilities/AnimateTilingBackgroundSystem.ts",
+        "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Utilities/DestroyAfterDelaySystem.ts",
+        "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Utilities/FitScreenLayoutSystem.ts",
+        "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Utilities/InputService.ts",
+        "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Utilities/LocalizationService.ts",
+        "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Utilities/RenderModeSelector.ts",
+        "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Utilities/SoundService.ts",
+        "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Utilities/UpdateCustomButtonSystem.ts",
+        "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Utilities/UpdateLocalizedText.ts",
+        "D:/UnityAss/UnityH5/Assets/TinySamples/MatchThree/Scripts/Utilities/UserDataService.ts",
+        "D:/UnityAss/UnityH5/Library/PackageCache/com.unity.tiny@0.14.5-preview/Runtime/Modules/UTiny.EntityGroup/Scripts/EntityGroup.ts",
+        "D:/UnityAss/UnityH5/Library/PackageCache/com.unity.tiny@0.14.5-preview/Runtime/Modules/UTiny.EntityGroup/Scripts/EntityLookupCache.ts"
+    ],
+    "InputHash": "7f33607aff5cef591c91c36d7c26444d",
+    "GeneratedAt": "Sat Jul 06 2019 12:59:27 GMT+0800 (中国标准时间)"
+}

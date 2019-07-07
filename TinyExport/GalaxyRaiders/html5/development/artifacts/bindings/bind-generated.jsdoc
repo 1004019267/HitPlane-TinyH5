@@ -1,0 +1,614 @@
+/**
+
+@struct
+@memberof game
+@name GameState
+*/
+/**
+
+@member {game.GameState}
+@memberof game.GameState
+@name Initialize
+*/
+/**
+
+@member {game.GameState}
+@memberof game.GameState
+@name Menu
+*/
+/**
+
+@member {game.GameState}
+@memberof game.GameState
+@name Play
+*/
+/**
+
+@member {game.GameState}
+@memberof game.GameState
+@name GameOver
+*/
+/**
+
+@struct
+@memberof game
+@name LaserTag
+*/
+/**
+
+@member {game.LaserTag}
+@memberof game.LaserTag
+@name Raider
+*/
+/**
+
+@member {game.LaserTag}
+@memberof game.LaserTag
+@name Spaceship
+*/
+/**
+
+@component
+@memberof entities.game.Bootstrap
+@name Component
+*/
+/**
+
+@component
+@memberof entities.game.Explosion
+@name Component
+*/
+/**
+
+@component
+@memberof entities.game.GameMenu
+@name Component
+*/
+/**
+
+@component
+@memberof entities.game.GameOver
+@name Component
+*/
+/**
+
+@component
+@memberof entities.game.GameScene
+@name Component
+*/
+/**
+
+@component
+@memberof entities.game.GameWin
+@name Component
+*/
+/**
+
+@component
+@memberof entities.game.RaiderLaser
+@name Component
+*/
+/**
+
+@component
+@memberof entities.game.SpaceshipLaser
+@name Component
+*/
+/**
+
+@component
+@memberof game
+@name Boundary
+*/
+/**
+
+@component
+@memberof game
+@name DefensePoint
+*/
+/**
+
+@component
+@memberof game
+@name Explosion
+*/
+/**
+
+@member {int32}
+@memberof game.Explosion
+@name duration
+*/
+/**
+
+@component
+@memberof game
+@name GameOverLine
+*/
+/**
+
+@component
+@memberof game
+@name Hit
+*/
+/**
+
+@component
+@memberof game
+@name Laser
+*/
+/**
+
+@member {int32}
+@memberof game.Laser
+@name speed
+*/
+/**
+
+@member {game.LaserTag}
+@memberof game.Laser
+@name tag
+*/
+/**
+
+@member {ut.Entity}
+@memberof game.Laser
+@name reference
+*/
+/**
+
+@component
+@memberof game
+@name LifeManager
+*/
+/**
+
+@member {ut.<ut.Entity>}
+@memberof game.LifeManager
+@name LifeSprites
+*/
+/**
+
+@member {ut.Entity}
+@memberof game.LifeManager
+@name LifeCount
+*/
+/**
+
+@component
+@memberof game
+@name Move
+*/
+/**
+
+@member {int32}
+@memberof game.Move
+@name speed
+*/
+/**
+
+@member {int32}
+@memberof game.Move
+@name threshold
+*/
+/**
+
+@member {ut.Math.Vector2}
+@memberof game.Move
+@name touchSwipe
+*/
+/**
+
+@component
+@memberof game
+@name Raider
+*/
+/**
+
+@member {int32}
+@memberof game.Raider
+@name points
+*/
+/**
+
+@component
+@memberof game
+@name Raiders
+*/
+/**
+
+@member {float}
+@memberof game.Raiders
+@name speed
+*/
+/**
+
+@member {bool}
+@memberof game.Raiders
+@name isMovingRight
+*/
+/**
+
+@member {int32}
+@memberof game.Raiders
+@name threshold
+*/
+/**
+
+@component
+@memberof game
+@name Score
+*/
+/**
+
+@component
+@memberof game
+@name Spaceship
+*/
+/**
+
+@component
+@memberof game
+@name GameContext
+*/
+/**
+
+@member {bool}
+@memberof game.GameContext
+@name RaidersCanShoot
+*/
+/**
+
+@member {bool}
+@memberof game.GameContext
+@name PlayerCanShoot
+*/
+/**
+
+@member {uint16}
+@memberof game.GameContext
+@name Score
+*/
+/**
+
+@member {int8}
+@memberof game.GameContext
+@name Life
+*/
+/**
+
+@member {game.GameState}
+@memberof game.GameContext
+@name State
+*/
+/**
+
+@member {float}
+@memberof game.GameContext
+@name FlickeringInterval
+*/
+/**
+
+@member {float}
+@memberof game.GameContext
+@name FlickeringTime
+*/
+/**
+
+@member {uint8}
+@memberof game.GameContext
+@name RaiderIndex
+*/
+/**
+
+@member {float}
+@memberof game.GameContext
+@name StartShootingDelay
+*/
+/**
+
+@member {float}
+@memberof game.GameContext
+@name TimeElapsedSinceStart
+*/
+/**
+
+@component
+@memberof ut.Core2D.layers
+@name Default
+*/
+/**
+
+@component
+@memberof ut.Core2D.layers
+@name TransparentFX
+*/
+/**
+
+@component
+@memberof ut.Core2D.layers
+@name IgnoreRaycast
+*/
+/**
+
+@component
+@memberof ut.Core2D.layers
+@name Water
+*/
+/**
+
+@component
+@memberof ut.Core2D.layers
+@name UI
+*/
+/**
+
+@component
+@memberof ut.Core2D.layers
+@name PostProcessing
+*/
+/**
+
+@component
+@memberof ut.Core2D.layers
+@name Cutscene
+*/
+/**
+
+@component
+@memberof ut.EditorExtensions
+@name AssetReferenceAnimationClip
+*/
+/**
+
+@member {string}
+@memberof ut.EditorExtensions.AssetReferenceAnimationClip
+@name guid
+*/
+/**
+
+@member {int64}
+@memberof ut.EditorExtensions.AssetReferenceAnimationClip
+@name fileId
+*/
+/**
+
+@member {int32}
+@memberof ut.EditorExtensions.AssetReferenceAnimationClip
+@name type
+*/
+/**
+
+@component
+@memberof ut.EditorExtensions
+@name AssetReferenceAudioClip
+*/
+/**
+
+@member {string}
+@memberof ut.EditorExtensions.AssetReferenceAudioClip
+@name guid
+*/
+/**
+
+@member {int64}
+@memberof ut.EditorExtensions.AssetReferenceAudioClip
+@name fileId
+*/
+/**
+
+@member {int32}
+@memberof ut.EditorExtensions.AssetReferenceAudioClip
+@name type
+*/
+/**
+
+@component
+@memberof ut.EditorExtensions
+@name AssetReferenceSprite
+*/
+/**
+
+@member {string}
+@memberof ut.EditorExtensions.AssetReferenceSprite
+@name guid
+*/
+/**
+
+@member {int64}
+@memberof ut.EditorExtensions.AssetReferenceSprite
+@name fileId
+*/
+/**
+
+@member {int32}
+@memberof ut.EditorExtensions.AssetReferenceSprite
+@name type
+*/
+/**
+
+@component
+@memberof ut.EditorExtensions
+@name AssetReferenceSpriteAtlas
+*/
+/**
+
+@member {string}
+@memberof ut.EditorExtensions.AssetReferenceSpriteAtlas
+@name guid
+*/
+/**
+
+@member {int64}
+@memberof ut.EditorExtensions.AssetReferenceSpriteAtlas
+@name fileId
+*/
+/**
+
+@member {int32}
+@memberof ut.EditorExtensions.AssetReferenceSpriteAtlas
+@name type
+*/
+/**
+
+@component
+@memberof ut.EditorExtensions
+@name AssetReferenceTexture2D
+*/
+/**
+
+@member {string}
+@memberof ut.EditorExtensions.AssetReferenceTexture2D
+@name guid
+*/
+/**
+
+@member {int64}
+@memberof ut.EditorExtensions.AssetReferenceTexture2D
+@name fileId
+*/
+/**
+
+@member {int32}
+@memberof ut.EditorExtensions.AssetReferenceTexture2D
+@name type
+*/
+/**
+
+@component
+@memberof ut.EditorExtensions
+@name AssetReferenceTileBase
+*/
+/**
+
+@member {string}
+@memberof ut.EditorExtensions.AssetReferenceTileBase
+@name guid
+*/
+/**
+
+@member {int64}
+@memberof ut.EditorExtensions.AssetReferenceTileBase
+@name fileId
+*/
+/**
+
+@member {int32}
+@memberof ut.EditorExtensions.AssetReferenceTileBase
+@name type
+*/
+/**
+
+@component
+@memberof ut.EditorExtensions
+@name AssetReferenceTMP_FontAsset
+*/
+/**
+
+@member {string}
+@memberof ut.EditorExtensions.AssetReferenceTMP_FontAsset
+@name guid
+*/
+/**
+
+@member {int64}
+@memberof ut.EditorExtensions.AssetReferenceTMP_FontAsset
+@name fileId
+*/
+/**
+
+@member {int32}
+@memberof ut.EditorExtensions.AssetReferenceTMP_FontAsset
+@name type
+*/
+/**
+
+@component
+@memberof ut.EditorExtensions
+@name CameraCullingMask
+*/
+/**
+
+@member {int32}
+@memberof ut.EditorExtensions.CameraCullingMask
+@name mask
+*/
+/**
+
+@component
+@memberof ut.EditorExtensions
+@name EntityLayer
+*/
+/**
+
+@member {int32}
+@memberof ut.EditorExtensions.EntityLayer
+@name layer
+*/
+/**
+
+@system
+@memberof game
+@name DamageSystemJS
+*/
+/**
+
+@system
+@memberof game
+@name ExplosionSystemJS
+*/
+/**
+
+@system
+@memberof game
+@name GameManagerSystemJS
+*/
+/**
+
+@system
+@memberof game
+@name HitSystemJS
+*/
+/**
+
+@system
+@memberof game
+@name LaserSystemJS
+*/
+/**
+
+@system
+@memberof game
+@name LifeManagerSystemJS
+*/
+/**
+
+@system
+@memberof game
+@name MoveSystemJS
+*/
+/**
+
+@system
+@memberof game
+@name RaiderSystemJS
+*/
+/**
+
+@system
+@memberof game
+@name RaidersSystemJS
+*/
+/**
+
+@system
+@memberof game
+@name ScoreSystemJS
+*/
+/**
+
+@system
+@memberof game
+@name SpaceshipSystemJS
+*/
+
+

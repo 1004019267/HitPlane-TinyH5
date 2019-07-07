@@ -1,0 +1,180 @@
+{
+  "Nodes": [
+    {
+      "Annotation": "all_tundra_nodes",
+      "Action": "",
+      "Inputs": [],
+      "Outputs": [],
+      "PassIndex": 0,
+      "Deps": [
+        1,
+        2,
+        3
+      ],
+      "OverwriteOutputs": true,
+      "FrontendResponseFiles": [],
+      "AllowUnexpectedOutput": true,
+      "AllowUnwrittenOutputFiles": false,
+      "AllowedOutputSubstrings": [],
+      "DebugActionIndex": 0
+    },
+    {
+      "Annotation": "Download and unpack artifacts/Stevedore/7za-win-x64/.StevedoreVersion",
+      "Action": "D:\\UnityAss\\UnityH5\\Tiny\\Dist\\bee.exe steve internal-unpack public 7za-win-x64/16.04-1.1.4_0d1e6ad367de3bb0c1a396856903c63e080a1e8fee52897cb5f5dee063832831.zip \"artifacts/Stevedore/7za-win-x64\"",
+      "Inputs": [],
+      "Outputs": [
+        "artifacts/Stevedore/7za-win-x64/.StevedoreVersion",
+        "artifacts/Stevedore/7za-win-x64"
+      ],
+      "PassIndex": 0,
+      "Deps": [],
+      "OverwriteOutputs": true,
+      "FrontendResponseFiles": [],
+      "AllowUnexpectedOutput": true,
+      "AllowUnwrittenOutputFiles": true,
+      "AllowedOutputSubstrings": [],
+      "Env": [],
+      "DebugActionIndex": 1
+    },
+    {
+      "Annotation": "Download and unpack artifacts/Stevedore/tiny-dist/.StevedoreVersion",
+      "Action": "D:\\UnityAss\\UnityH5\\Tiny\\Dist\\bee.exe steve internal-unpack public tiny-dist/24b467d6656b00060f60cba04aa94438e2416ee1_fb80481159e1b247fa9990f42cd7b84b69c130101fd15f45e967354ad533d8b0.7z \"artifacts/Stevedore/tiny-dist\"",
+      "Inputs": [
+        "artifacts/Stevedore/7za-win-x64/7za.exe"
+      ],
+      "Outputs": [
+        "artifacts/Stevedore/tiny-dist/.StevedoreVersion",
+        "artifacts/Stevedore/tiny-dist"
+      ],
+      "PassIndex": 0,
+      "Deps": [
+        1
+      ],
+      "OverwriteOutputs": true,
+      "FrontendResponseFiles": [],
+      "AllowUnexpectedOutput": true,
+      "AllowUnwrittenOutputFiles": true,
+      "AllowedOutputSubstrings": [],
+      "Env": [
+        {
+          "Key": "BEE_INTERNAL_STEVEDORE_7ZA",
+          "Value": "D:\\UnityAss\\UnityH5\\Tiny\\Dist\\artifacts\\Stevedore\\7za-win-x64\\7za.exe"
+        }
+      ],
+      "DebugActionIndex": 2
+    },
+    {
+      "Annotation": "Download and unpack artifacts/Stevedore/tiny-samples/.StevedoreVersion",
+      "Action": "D:\\UnityAss\\UnityH5\\Tiny\\Dist\\bee.exe steve internal-unpack public tiny-samples/24b467d6656b00060f60cba04aa94438e2416ee1_0aa6216384de2bba66969d0e60403ed2f7973b947832c2b4b29438df1a671f50.7z \"artifacts/Stevedore/tiny-samples\"",
+      "Inputs": [
+        "artifacts/Stevedore/7za-win-x64/7za.exe"
+      ],
+      "Outputs": [
+        "artifacts/Stevedore/tiny-samples/.StevedoreVersion",
+        "artifacts/Stevedore/tiny-samples"
+      ],
+      "PassIndex": 0,
+      "Deps": [
+        1
+      ],
+      "OverwriteOutputs": true,
+      "FrontendResponseFiles": [],
+      "AllowUnexpectedOutput": true,
+      "AllowUnwrittenOutputFiles": true,
+      "AllowedOutputSubstrings": [],
+      "Env": [
+        {
+          "Key": "BEE_INTERNAL_STEVEDORE_7ZA",
+          "Value": "D:\\UnityAss\\UnityH5\\Tiny\\Dist\\artifacts\\Stevedore\\7za-win-x64\\7za.exe"
+        }
+      ],
+      "DebugActionIndex": 3
+    }
+  ],
+  "FileSignatures": [
+    {
+      "File": "artifacts/Stevedore/7za-win-x64/7za.exe"
+    },
+    {
+      "File": "Bees/BuildProgram.bee.cs"
+    },
+    {
+      "File": "bee.exe"
+    },
+    {
+      "File": "artifacts/Stevedore/roslyn-csc-win64/csc.exe"
+    },
+    {
+      "File": "artifacts/rsp/2201356903816615512.rsp"
+    },
+    {
+      "File": "bee.config"
+    }
+  ],
+  "GlobSignatures": [
+    {
+      "Path": "."
+    },
+    {
+      "Path": "Bees"
+    },
+    {
+      "Path": "C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.6"
+    }
+  ],
+  "ContentDigestExtensions": [
+    ".rsp",
+    ".dll",
+    ".exe",
+    ".c",
+    ".cpp",
+    ".h",
+    ".cs",
+    ".hpp"
+  ],
+  "StructuredLogFileName": "artifacts/tundra.log.json",
+  "StateFileName": "artifacts/TundraBuildState.state",
+  "StateFileNameTmp": "artifacts/TundraBuildState.state.tmp",
+  "ScanCacheFileName": "artifacts/tundra.scancache",
+  "ScanCacheFileNameTmp": "artifacts/tundra.scancache.tmp",
+  "DigestCacheFileName": "artifacts/tundra.digestcache",
+  "DigestCacheFileNameTmp": "artifacts/tundra.digestcache.tmp",
+  "SharedResources": [],
+  "Passes": [
+    "0"
+  ],
+  "Scanners": [],
+  "Setup": {
+    "DefaultBuildTuple": {
+      "VariantIndex": 0,
+      "ConfigIndex": 0,
+      "SubVariantIndex": 0
+    },
+    "SubVariants": [
+      "default"
+    ],
+    "Configs": [
+      "default"
+    ],
+    "Variants": [
+      "default"
+    ],
+    "BuildTuples": [
+      {
+        "VariantIndex": 0,
+        "DefaultNodes": [
+          0
+        ],
+        "NamedNodes": {
+          "all_tundra_nodes": 0
+        },
+        "ConfigIndex": 0,
+        "SubVariantIndex": 0,
+        "AlwaysNodes": []
+      }
+    ]
+  },
+  "BuildTitle": "Bee",
+  "Identifier": "artifacts/tundra.dag.json",
+  "RelativePathToRoot": ".."
+}

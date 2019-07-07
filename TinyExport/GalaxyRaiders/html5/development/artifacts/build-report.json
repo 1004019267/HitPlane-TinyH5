@@ -1,0 +1,157 @@
+﻿{
+    "Item": {
+        "Name": "Project",
+        "Size": 0,
+        "CompressedSize": 0
+    },
+    "Children": [{
+        "Item": {
+            "Name": "Runtime",
+            "Size": 0,
+            "CompressedSize": 0
+        },
+        "Children": [{
+            "Item": {
+                "Name": "TinyExport/GalaxyRaiders/html5/development/build/runtime.js",
+                "Size": 5750849,
+                "CompressedSize": 719636
+            }
+        }]
+    }, {
+        "Item": {
+            "Name": "Assets",
+            "Size": 0,
+            "CompressedSize": 0
+        },
+        "Children": [{
+            "Item": {
+                "Name": "JavaScript",
+                "Size": 17137,
+                "CompressedSize": 0
+            }
+        }, {
+            "Item": {
+                "Name": "Assets/TinySamples/GalaxyRaiders/Texture/GalaxyRaiders.png",
+                "Size": 0,
+                "CompressedSize": 0,
+                "Object": { "$TypeId": 10, "Guid": "2e1255b50d7d4495192345a56a9fca52", "FileId": 2800000, "Type": 3 }
+            },
+            "Children": [{
+                "Item": {
+                    "Name": "TinyExport/GalaxyRaiders/html5/development/artifacts/assets/GalaxyRaiders.png",
+                    "Size": 8476,
+                    "CompressedSize": 6336,
+                    "Object": { "$TypeId": 10, "Guid": "2e1255b50d7d4495192345a56a9fca52", "FileId": 2800000, "Type": 3 }
+                }
+            }]
+        }, {
+            "Item": {
+                "Name": "Assets/TinySamples/GalaxyRaiders/Texture/background.png",
+                "Size": 0,
+                "CompressedSize": 0,
+                "Object": { "$TypeId": 10, "Guid": "0d2337155d64944a68ae459088e76a80", "FileId": 2800000, "Type": 3 }
+            },
+            "Children": [{
+                "Item": {
+                    "Name": "TinyExport/GalaxyRaiders/html5/development/artifacts/assets/background.png",
+                    "Size": 11928,
+                    "CompressedSize": 8883,
+                    "Object": { "$TypeId": 10, "Guid": "0d2337155d64944a68ae459088e76a80", "FileId": 2800000, "Type": 3 }
+                }
+            }]
+        }]
+    }, {
+        "Item": {
+            "Name": "Code",
+            "Size": 0,
+            "CompressedSize": 0
+        },
+        "Children": [{
+            "Item": {
+                "Name": "TinyExport/GalaxyRaiders/html5/development/build/entities.js",
+                "Size": 263339,
+                "CompressedSize": 32940
+            },
+            "Children": [{
+                "Item": {
+                    "Name": "Bootstrap",
+                    "Size": 1879,
+                    "CompressedSize": 623
+                }
+            }, {
+                "Item": {
+                    "Name": "Explosion",
+                    "Size": 2379,
+                    "CompressedSize": 647
+                }
+            }, {
+                "Item": {
+                    "Name": "GameMenu",
+                    "Size": 19440,
+                    "CompressedSize": 3290
+                }
+            }, {
+                "Item": {
+                    "Name": "GameOver",
+                    "Size": 3396,
+                    "CompressedSize": 835
+                }
+            }, {
+                "Item": {
+                    "Name": "GameScene",
+                    "Size": 228068,
+                    "CompressedSize": 28437
+                }
+            }, {
+                "Item": {
+                    "Name": "GameWin",
+                    "Size": 3399,
+                    "CompressedSize": 843
+                }
+            }, {
+                "Item": {
+                    "Name": "RaiderLaser",
+                    "Size": 2339,
+                    "CompressedSize": 684
+                }
+            }, {
+                "Item": {
+                    "Name": "SpaceshipLaser",
+                    "Size": 2368,
+                    "CompressedSize": 692
+                }
+            }]
+        }, {
+            "Item": {
+                "Name": "TinyExport/GalaxyRaiders/html5/development/build/bindings.js",
+                "Size": 140460,
+                "CompressedSize": 12034
+            }
+        }, {
+            "Item": {
+                "Name": "Linked Code Files",
+                "Size": 0,
+                "CompressedSize": 0
+            },
+            "Children": [{
+                "Item": {
+                    "Name": "TinyExport/GalaxyRaiders/html5/development/artifacts/scripts/tsc-emit.js",
+                    "Size": 35157,
+                    "CompressedSize": 5386
+                }
+            }]
+        }, {
+            "Item": {
+                "Name": "TinyExport/GalaxyRaiders/html5/development/build/main.js",
+                "Size": 4191,
+                "CompressedSize": 1095
+            }
+        }, {
+            "Item": {
+                "Name": "TinyExport/GalaxyRaiders/html5/development/build/wsclient.js",
+                "Size": 9391,
+                "CompressedSize": 2619
+            }
+        }]
+    }]
+}

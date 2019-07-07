@@ -1,0 +1,100 @@
+﻿{
+    "Item": {
+        "Name": "Project",
+        "Size": 0,
+        "CompressedSize": 0
+    },
+    "Children": [{
+        "Item": {
+            "Name": "Runtime",
+            "Size": 0,
+            "CompressedSize": 0
+        },
+        "Children": [{
+            "Item": {
+                "Name": "TinyExport/UILayoutDemo/html5/development/build/runtime.js",
+                "Size": 5750849,
+                "CompressedSize": 719636
+            }
+        }]
+    }, {
+        "Item": {
+            "Name": "Assets",
+            "Size": 0,
+            "CompressedSize": 0
+        },
+        "Children": [{
+            "Item": {
+                "Name": "JavaScript",
+                "Size": 8488,
+                "CompressedSize": 0
+            }
+        }, {
+            "Item": {
+                "Name": "Assets/TinySamples/UILayoutDemo/Textures/UIpack.png",
+                "Size": 0,
+                "CompressedSize": 0,
+                "Object": { "$TypeId": 10, "Guid": "8312e38bd351d45f28e5ded1593fd06a", "FileId": 2800000, "Type": 3 }
+            },
+            "Children": [{
+                "Item": {
+                    "Name": "TinyExport/UILayoutDemo/html5/development/artifacts/assets/UIpack.png",
+                    "Size": 1266920,
+                    "CompressedSize": 916548,
+                    "Object": { "$TypeId": 10, "Guid": "8312e38bd351d45f28e5ded1593fd06a", "FileId": 2800000, "Type": 3 }
+                }
+            }]
+        }]
+    }, {
+        "Item": {
+            "Name": "Code",
+            "Size": 0,
+            "CompressedSize": 0
+        },
+        "Children": [{
+            "Item": {
+                "Name": "TinyExport/UILayoutDemo/html5/development/build/entities.js",
+                "Size": 26803,
+                "CompressedSize": 4479
+            },
+            "Children": [{
+                "Item": {
+                    "Name": "Scene",
+                    "Size": 26719,
+                    "CompressedSize": 4391
+                }
+            }]
+        }, {
+            "Item": {
+                "Name": "TinyExport/UILayoutDemo/html5/development/build/bindings.js",
+                "Size": 75400,
+                "CompressedSize": 5787
+            }
+        }, {
+            "Item": {
+                "Name": "Linked Code Files",
+                "Size": 0,
+                "CompressedSize": 0
+            },
+            "Children": [{
+                "Item": {
+                    "Name": "TinyExport/UILayoutDemo/html5/development/artifacts/scripts/tsc-emit.js",
+                    "Size": 3168,
+                    "CompressedSize": 927
+                }
+            }]
+        }, {
+            "Item": {
+                "Name": "TinyExport/UILayoutDemo/html5/development/build/main.js",
+                "Size": 2489,
+                "CompressedSize": 804
+            }
+        }, {
+            "Item": {
+                "Name": "TinyExport/UILayoutDemo/html5/development/build/wsclient.js",
+                "Size": 9391,
+                "CompressedSize": 2619
+            }
+        }]
+    }]
+}

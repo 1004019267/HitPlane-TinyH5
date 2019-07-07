@@ -1,0 +1,63 @@
+{
+    "Success": true,
+    "Diagnostics": [],
+    "Systems": [
+        {
+            "Name": "AudioInputSystem",
+            "QualifiedName": "game.AudioInputSystem",
+            "Description": "",
+            "Source": {
+                "File": "D:/UnityAss/UnityH5/Assets/TinySamples/AudioForest/Scripts/AudioInputSystem.ts",
+                "Line": 5,
+                "Character": 15
+            },
+            "ExecuteAfter": [
+                "ut.Shared.UserCodeStart"
+            ],
+            "ExecuteBefore": [
+                "ut.Shared.UserCodeEnd"
+            ]
+        }
+    ],
+    "Filters": [],
+    "Behaviours": [],
+    "Performance": [
+        {
+            "Key": "tsconfig",
+            "Description": "Time taken to read and parse the given tsconfig.json file",
+            "Duration": 59,
+            "Steps": 1
+        },
+        {
+            "Key": "checksum",
+            "Description": "Time taken to compute the MD5 of all inputs",
+            "Duration": 175,
+            "Steps": 1
+        },
+        {
+            "Key": "compile",
+            "Description": "Time taken to compile the TypeScript program",
+            "Duration": 898,
+            "Steps": 10
+        },
+        {
+            "Key": "emit",
+            "Description": "Time taken to generate and write the JavaScript output",
+            "Duration": 41,
+            "Steps": 2
+        },
+        {
+            "Key": "metadata",
+            "Description": "Time taken to reflect Tiny metadata from the compiled program",
+            "Duration": 4,
+            "Steps": 1
+        }
+    ],
+    "SourceFiles": [
+        "D:/UnityAss/UnityH5/Assets/TinySamples/AudioForest/Scripts/AudioInputSystem.ts",
+        "D:/UnityAss/UnityH5/Library/PackageCache/com.unity.tiny@0.14.5-preview/Runtime/Modules/UTiny.EntityGroup/Scripts/EntityGroup.ts",
+        "D:/UnityAss/UnityH5/Library/PackageCache/com.unity.tiny@0.14.5-preview/Runtime/Modules/UTiny.EntityGroup/Scripts/EntityLookupCache.ts"
+    ],
+    "InputHash": "3273bcab63eb4ce33b15c83151419eef",
+    "GeneratedAt": "Sat Jul 06 2019 13:17:28 GMT+0800 (中国标准时间)"
+}

@@ -1,0 +1,247 @@
+{
+    "Success": true,
+    "Diagnostics": [],
+    "Systems": [
+        {
+            "Name": "InputMovementSystem",
+            "QualifiedName": "game.InputMovementSystem",
+            "Description": "New System",
+            "Source": {
+                "File": "D:/UnityAss/UnityH5/Assets/BasicWorkshop/Scripts/InputMovementSystem.ts",
+                "Line": 6,
+                "Character": 17
+            },
+            "ExecuteAfter": [
+                "ut.Shared.InputFence"
+            ]
+        },
+        {
+            "Name": "LaserSystem",
+            "QualifiedName": "game.LaserSystem",
+            "Description": "New System",
+            "Source": {
+                "File": "D:/UnityAss/UnityH5/Assets/BasicWorkshop/Scripts/LaserSystem.ts",
+                "Line": 9,
+                "Character": 17
+            },
+            "ExecuteAfter": [
+                "ut.Shared.UserCodeStart"
+            ],
+            "ExecuteBefore": [
+                "ut.Shared.UserCodeEnd"
+            ],
+            "RequiredComponents": [
+                "game.Laser",
+                "ut.Core2D.TransformLocalPosition"
+            ]
+        },
+        {
+            "Name": "PlayerCollisionSystem",
+            "QualifiedName": "game.PlayerCollisionSystem",
+            "Description": "New System",
+            "Source": {
+                "File": "D:/UnityAss/UnityH5/Assets/BasicWorkshop/Scripts/PlayerCollisionSystem.ts",
+                "Line": 5,
+                "Character": 17
+            }
+        },
+        {
+            "Name": "SpawnSystem",
+            "QualifiedName": "game.SpawnSystem",
+            "Description": "New System",
+            "Source": {
+                "File": "D:/UnityAss/UnityH5/Assets/BasicWorkshop/Scripts/SpawnSystem.ts",
+                "Line": 6,
+                "Character": 17
+            }
+        },
+        {
+            "Name": "Time",
+            "QualifiedName": "game.Time",
+            "Description": "New System",
+            "Source": {
+                "File": "D:/UnityAss/UnityH5/Assets/BasicWorkshop/Scripts/Time.ts",
+                "Line": 6,
+                "Character": 17
+            },
+            "ExecuteBefore": [
+                "ut.Shared.UserCodeStart"
+            ]
+        }
+    ],
+    "Filters": [
+        {
+            "Name": "EnemyBehaviorFilterFilter",
+            "QualifiedName": "game.EnemyBehaviorFilterFilter",
+            "Description": "",
+            "Source": {
+                "File": "D:/UnityAss/UnityH5/Assets/BasicWorkshop/Scripts/EnemyBehaviorFilter.ts",
+                "Line": 5,
+                "Character": 17
+            },
+            "Fields": [
+                {
+                    "Name": "entity",
+                    "QualifiedName": "ut.Entity",
+                    "Description": "",
+                    "Source": {
+                        "File": "D:/UnityAss/UnityH5/Assets/BasicWorkshop/Scripts/EnemyBehaviorFilter.ts",
+                        "Line": 5,
+                        "Character": 69
+                    },
+                    "IsStatic": false,
+                    "IsReadonly": false,
+                    "IsOptional": false,
+                    "IsPublic": true
+                },
+                {
+                    "Name": "position",
+                    "QualifiedName": "ut.Core2D.TransformLocalPosition",
+                    "Description": "",
+                    "Source": {
+                        "File": "D:/UnityAss/UnityH5/Assets/BasicWorkshop/Scripts/EnemyBehaviorFilter.ts",
+                        "Line": 6,
+                        "Character": 27
+                    },
+                    "IsStatic": false,
+                    "IsReadonly": false,
+                    "IsOptional": true,
+                    "IsPublic": true
+                },
+                {
+                    "Name": "tag",
+                    "QualifiedName": "game.EnemyTag",
+                    "Description": "",
+                    "Source": {
+                        "File": "D:/UnityAss/UnityH5/Assets/BasicWorkshop/Scripts/EnemyBehaviorFilter.ts",
+                        "Line": 7,
+                        "Character": 53
+                    },
+                    "IsStatic": false,
+                    "IsReadonly": false,
+                    "IsOptional": false,
+                    "IsPublic": true
+                },
+                {
+                    "Name": "speed",
+                    "QualifiedName": "game.MoveSpeed",
+                    "Description": "",
+                    "Source": {
+                        "File": "D:/UnityAss/UnityH5/Assets/BasicWorkshop/Scripts/EnemyBehaviorFilter.ts",
+                        "Line": 8,
+                        "Character": 21
+                    },
+                    "IsStatic": false,
+                    "IsReadonly": false,
+                    "IsOptional": false,
+                    "IsPublic": true
+                },
+                {
+                    "Name": "speedChange",
+                    "QualifiedName": "game.ChangeOverTime",
+                    "Description": "",
+                    "Source": {
+                        "File": "D:/UnityAss/UnityH5/Assets/BasicWorkshop/Scripts/EnemyBehaviorFilter.ts",
+                        "Line": 9,
+                        "Character": 30
+                    },
+                    "IsStatic": false,
+                    "IsReadonly": false,
+                    "IsOptional": false,
+                    "IsPublic": true
+                },
+                {
+                    "Name": "bounds",
+                    "QualifiedName": "game.Boundaries",
+                    "Description": "",
+                    "Source": {
+                        "File": "D:/UnityAss/UnityH5/Assets/BasicWorkshop/Scripts/EnemyBehaviorFilter.ts",
+                        "Line": 10,
+                        "Character": 35
+                    },
+                    "IsStatic": false,
+                    "IsReadonly": false,
+                    "IsOptional": false,
+                    "IsPublic": true
+                }
+            ]
+        }
+    ],
+    "Behaviours": [
+        {
+            "Name": "EnemyBehaviorFilter",
+            "QualifiedName": "game.EnemyBehaviorFilter",
+            "Description": "",
+            "Source": {
+                "File": "D:/UnityAss/UnityH5/Assets/BasicWorkshop/Scripts/EnemyBehaviorFilter.ts",
+                "Line": 14,
+                "Character": 17
+            },
+            "Fields": [
+                {
+                    "Name": "data",
+                    "QualifiedName": "game.EnemyBehaviorFilterFilter",
+                    "Description": "",
+                    "Source": {
+                        "File": "D:/UnityAss/UnityH5/Assets/BasicWorkshop/Scripts/EnemyBehaviorFilter.ts",
+                        "Line": 14,
+                        "Character": 69
+                    },
+                    "IsStatic": false,
+                    "IsReadonly": false,
+                    "IsOptional": false,
+                    "IsPublic": true
+                }
+            ],
+            "Methods": [
+                "OnEntityEnable",
+                "OnEntityUpdate"
+            ]
+        }
+    ],
+    "Performance": [
+        {
+            "Key": "tsconfig",
+            "Description": "Time taken to read and parse the given tsconfig.json file",
+            "Duration": 81,
+            "Steps": 1
+        },
+        {
+            "Key": "checksum",
+            "Description": "Time taken to compute the MD5 of all inputs",
+            "Duration": 177,
+            "Steps": 1
+        },
+        {
+            "Key": "compile",
+            "Description": "Time taken to compile the TypeScript program",
+            "Duration": 993,
+            "Steps": 16
+        },
+        {
+            "Key": "emit",
+            "Description": "Time taken to generate and write the JavaScript output",
+            "Duration": 80,
+            "Steps": 2
+        },
+        {
+            "Key": "metadata",
+            "Description": "Time taken to reflect Tiny metadata from the compiled program",
+            "Duration": 27,
+            "Steps": 5
+        }
+    ],
+    "SourceFiles": [
+        "D:/UnityAss/UnityH5/Assets/BasicWorkshop/Scripts/EnemyBehaviorFilter.ts",
+        "D:/UnityAss/UnityH5/Assets/BasicWorkshop/Scripts/GameService.ts",
+        "D:/UnityAss/UnityH5/Assets/BasicWorkshop/Scripts/InputMovementSystem.ts",
+        "D:/UnityAss/UnityH5/Assets/BasicWorkshop/Scripts/LaserSystem.ts",
+        "D:/UnityAss/UnityH5/Assets/BasicWorkshop/Scripts/PlayerCollisionSystem.ts",
+        "D:/UnityAss/UnityH5/Assets/BasicWorkshop/Scripts/SpawnSystem.ts",
+        "D:/UnityAss/UnityH5/Assets/BasicWorkshop/Scripts/Time.ts",
+        "D:/UnityAss/UnityH5/Library/PackageCache/com.unity.tiny@0.14.5-preview/Runtime/Modules/UTiny.EntityGroup/Scripts/EntityGroup.ts",
+        "D:/UnityAss/UnityH5/Library/PackageCache/com.unity.tiny@0.14.5-preview/Runtime/Modules/UTiny.EntityGroup/Scripts/EntityLookupCache.ts"
+    ],
+    "InputHash": "9eaa9cb6aaa51a8d294abbd3c825f12d",
+    "GeneratedAt": "Sun Jul 07 2019 22:33:41 GMT+0800 (中国标准时间)"
+}

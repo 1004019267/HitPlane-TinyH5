@@ -1,0 +1,230 @@
+{
+  "Nodes": [
+    {
+      "Annotation": "all_tundra_nodes",
+      "Action": "",
+      "Inputs": [],
+      "Outputs": [],
+      "PassIndex": 0,
+      "Deps": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "OverwriteOutputs": true,
+      "FrontendResponseFiles": [],
+      "AllowUnexpectedOutput": true,
+      "AllowUnwrittenOutputFiles": false,
+      "AllowedOutputSubstrings": [],
+      "DebugActionIndex": 0
+    },
+    {
+      "Annotation": "Download and unpack artifacts/Stevedore/7za-win-x64/.StevedoreVersion",
+      "Action": "D:\\UnityAss\\UnityH5\\Tiny\\Dist\\bee.exe steve internal-unpack public 7za-win-x64/16.04-1.1.4_0d1e6ad367de3bb0c1a396856903c63e080a1e8fee52897cb5f5dee063832831.zip \"artifacts/Stevedore/7za-win-x64\"",
+      "Inputs": [],
+      "Outputs": [
+        "artifacts/Stevedore/7za-win-x64/.StevedoreVersion",
+        "artifacts/Stevedore/7za-win-x64"
+      ],
+      "PassIndex": 0,
+      "Deps": [],
+      "OverwriteOutputs": true,
+      "FrontendResponseFiles": [],
+      "AllowUnexpectedOutput": true,
+      "AllowUnwrittenOutputFiles": true,
+      "AllowedOutputSubstrings": [],
+      "Env": [],
+      "DebugActionIndex": 1
+    },
+    {
+      "Annotation": "Download and unpack artifacts/Stevedore/roslyn-csc-win64/.StevedoreVersion",
+      "Action": "D:\\UnityAss\\UnityH5\\Tiny\\Dist\\bee.exe steve internal-unpack public roslyn-csc-win64/6c0e221e95df_ae56073e3848e11859fa7ba9219c356153b8c416f44f335d2a8972fef099e0f1.7z \"artifacts/Stevedore/roslyn-csc-win64\"",
+      "Inputs": [
+        "artifacts/Stevedore/7za-win-x64/7za.exe"
+      ],
+      "Outputs": [
+        "artifacts/Stevedore/roslyn-csc-win64/.StevedoreVersion",
+        "artifacts/Stevedore/roslyn-csc-win64"
+      ],
+      "PassIndex": 0,
+      "Deps": [
+        1
+      ],
+      "OverwriteOutputs": true,
+      "FrontendResponseFiles": [],
+      "AllowUnexpectedOutput": true,
+      "AllowUnwrittenOutputFiles": true,
+      "AllowedOutputSubstrings": [],
+      "Env": [
+        {
+          "Key": "BEE_INTERNAL_STEVEDORE_7ZA",
+          "Value": "D:\\UnityAss\\UnityH5\\Tiny\\Dist\\artifacts\\Stevedore\\7za-win-x64\\7za.exe"
+        }
+      ],
+      "DebugActionIndex": 2
+    },
+    {
+      "Annotation": "WriteResponseFile artifacts/rsp/2201356903816615512.rsp",
+      "WriteTextFilePayload": "-out:artifacts/buildprogram/buildprogram.exe /refout:\"artifacts\\Bee.CSharpSupport\\referenceassemblies\\buildprogram.exe\\6679393424876907701.dll\" -warnaserror -r:\"C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.6/mscorlib.dll\" -r:\"C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.6/System.dll\" -r:\"C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.6/System.Core.dll\" -r:\"C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.6/System.Xml.dll\" -r:\"D:/UnityAss/UnityH5/Tiny/Dist/bee.exe\" \"Bees\\BuildProgram.bee.cs\" -langversion:7.2 -fullpaths /debug:pdbonly /optimize+ /nologo /deterministic",
+      "Inputs": [],
+      "Outputs": [
+        "artifacts/rsp/2201356903816615512.rsp"
+      ],
+      "PassIndex": 0,
+      "Deps": [],
+      "OverwriteOutputs": true,
+      "AllowUnwrittenOutputFiles": true,
+      "DebugActionIndex": 3
+    },
+    {
+      "Annotation": "Csc artifacts/buildprogram/buildprogram.exe",
+      "Action": "\"artifacts\\Stevedore\\roslyn-csc-win64\\csc.exe\" /nostdlib /noconfig @\"artifacts\\rsp\\2201356903816615512.rsp\"",
+      "Inputs": [
+        "Bees/BuildProgram.bee.cs",
+        "D:/UnityAss/UnityH5/Tiny/Dist/bee.exe",
+        "artifacts/Stevedore/roslyn-csc-win64/csc.exe",
+        "artifacts/rsp/2201356903816615512.rsp"
+      ],
+      "Outputs": [
+        "artifacts/buildprogram/buildprogram.exe",
+        "artifacts/buildprogram/buildprogram.pdb",
+        "artifacts/Bee.CSharpSupport/referenceassemblies/buildprogram.exe/6679393424876907701.dll"
+      ],
+      "PassIndex": 0,
+      "Deps": [
+        2,
+        3
+      ],
+      "OverwriteOutputs": true,
+      "FrontendResponseFiles": [
+        "artifacts/rsp/2201356903816615512.rsp"
+      ],
+      "AllowUnexpectedOutput": true,
+      "AllowUnwrittenOutputFiles": false,
+      "AllowedOutputSubstrings": [],
+      "DebugActionIndex": 4
+    },
+    {
+      "Annotation": "VisualStudioSolution build.gen.sln",
+      "WriteTextFilePayload": "\r\nMicrosoft Visual Studio Solution File, Format Version 12.00\r\n# Visual Studio 14\r\nVisualStudioVersion = 14.0.24720.0\r\nMinimumVisualStudioVersion = 10.0.40219.1\r\nProject(\"{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}\") = \"BuildProgram\", \"build.gen.csproj\", \"{4D1D762D-B9FE-40B3-8848-F20F6FEDCF63}\"\r\nEndProject\r\nGlobal\r\n\tGlobalSection(SolutionConfigurationPlatforms) = preSolution\r\n\t\tOnly|Default = Only|Default\r\n\tEndGlobalSection\r\n\tGlobalSection(ProjectConfigurationPlatforms) = postSolution\r\n\t\t{4D1D762D-B9FE-40B3-8848-F20F6FEDCF63}.Only|Default.ActiveCfg = Debug|AnyCPU\r\n\t\t{4D1D762D-B9FE-40B3-8848-F20F6FEDCF63}.Only|Default.Build.0 = Debug|AnyCPU\r\n\tEndGlobalSection\r\n\tGlobalSection(SolutionProperties) = preSolution\r\n\t\tHideSolutionNode = FALSE\r\n\tEndGlobalSection\r\n\tGlobalSection(NestedProjects) = preSolution\r\n\tEndGlobalSection\r\nEndGlobal\r\n",
+      "Inputs": [],
+      "Outputs": [
+        "build.gen.sln"
+      ],
+      "PassIndex": 0,
+      "Deps": [
+        6
+      ],
+      "OverwriteOutputs": true,
+      "AllowUnwrittenOutputFiles": true,
+      "DebugActionIndex": 5
+    },
+    {
+      "Annotation": "CSProject build.gen.csproj",
+      "WriteTextFilePayload": "﻿<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<Project ToolsVersion=\"14.0\" DefaultTargets=\"Build\" xmlns=\"http://schemas.microsoft.com/developer/msbuild/2003\">\r\n  <Import Project=\"$(MSBuildExtensionsPath)\\$(MSBuildToolsVersion)\\Microsoft.Common.props\" Condition=\"Exists('$(MSBuildExtensionsPath)\\$(MSBuildToolsVersion)\\Microsoft.Common.props')\" />\r\n  <PropertyGroup>\r\n    <Configuration Condition=\" '$(Configuration)' == '' \">Debug</Configuration>\r\n    <Platform Condition=\" '$(Platform)' == '' \">AnyCPU</Platform>\r\n    <ProjectGuid>{4D1D762D-B9FE-40B3-8848-F20F6FEDCF63}</ProjectGuid>\r\n    <OutputType>Exe</OutputType>\r\n    <RootNamespace>buildprogram</RootNamespace>\r\n    <AssemblyName>buildprogram</AssemblyName>\r\n    <FileAlignment>512</FileAlignment>\r\n    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>\r\n    <LangVersion>7.2</LangVersion>\r\n    <Prefer32Bit>false</Prefer32Bit>\r\n    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>\r\n  </PropertyGroup>\r\n  <PropertyGroup Condition=\" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' \">\r\n    <PlatformTarget>AnyCPU</PlatformTarget>\r\n    <DebugSymbols>false</DebugSymbols>\r\n    <DebugType>pdbonly</DebugType>\r\n    <Optimize>true</Optimize>\r\n    <OutputPath>artifacts\\Bee.CSharpSupport\\buildprogram\\Release</OutputPath>\r\n    <DefineConstants></DefineConstants>\r\n    <ErrorReport>prompt</ErrorReport>\r\n    <WarningLevel>4</WarningLevel>\r\n    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>\r\n    <NoWarn></NoWarn>\r\n    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>\r\n  </PropertyGroup>\r\n  <ItemGroup Condition=\" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' \">\r\n    <Compile Include=\"Bees\\BuildProgram.bee.cs\" />\r\n    <Reference Include=\"System\" />\r\n    <Reference Include=\"System.Core\" />\r\n    <Reference Include=\"bee\">\r\n      <HintPath>bee.exe</HintPath>\r\n    </Reference>\r\n  </ItemGroup>\r\n  <Import Project=\"$(MSBuildToolsPath)\\Microsoft.CSharp.targets\" />\r\n</Project>",
+      "Inputs": [],
+      "Outputs": [
+        "build.gen.csproj"
+      ],
+      "PassIndex": 0,
+      "Deps": [],
+      "OverwriteOutputs": true,
+      "AllowUnwrittenOutputFiles": true,
+      "DebugActionIndex": 6
+    },
+    {
+      "Annotation": "build",
+      "Action": "",
+      "Inputs": [],
+      "Outputs": [],
+      "PassIndex": 0,
+      "Deps": [
+        4,
+        5
+      ],
+      "OverwriteOutputs": true,
+      "FrontendResponseFiles": [],
+      "AllowUnexpectedOutput": true,
+      "AllowUnwrittenOutputFiles": false,
+      "AllowedOutputSubstrings": [],
+      "DebugActionIndex": 7
+    }
+  ],
+  "FileSignatures": [
+    {
+      "File": "Bees/BuildProgram.bee.cs"
+    },
+    {
+      "File": "bee.config"
+    },
+    {
+      "File": "bee.exe"
+    }
+  ],
+  "GlobSignatures": [
+    {
+      "Path": "Bees"
+    },
+    {
+      "Path": "."
+    },
+    {
+      "Path": "C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.6"
+    }
+  ],
+  "ContentDigestExtensions": [
+    ".rsp",
+    ".dll",
+    ".exe"
+  ],
+  "StructuredLogFileName": "artifacts/buildprogram/tundra.log.json",
+  "StateFileName": "artifacts/buildprogram/TundraBuildState.state",
+  "StateFileNameTmp": "artifacts/buildprogram/TundraBuildState.state.tmp",
+  "ScanCacheFileName": "artifacts/buildprogram/tundra.scancache",
+  "ScanCacheFileNameTmp": "artifacts/buildprogram/tundra.scancache.tmp",
+  "DigestCacheFileName": "artifacts/buildprogram/tundra.digestcache",
+  "DigestCacheFileNameTmp": "artifacts/buildprogram/tundra.digestcache.tmp",
+  "SharedResources": [],
+  "Passes": [
+    "0"
+  ],
+  "Scanners": [],
+  "Setup": {
+    "DefaultBuildTuple": {
+      "VariantIndex": 0,
+      "ConfigIndex": 0,
+      "SubVariantIndex": 0
+    },
+    "SubVariants": [
+      "default"
+    ],
+    "Configs": [
+      "default"
+    ],
+    "Variants": [
+      "default"
+    ],
+    "BuildTuples": [
+      {
+        "VariantIndex": 0,
+        "DefaultNodes": [
+          0
+        ],
+        "NamedNodes": {
+          "all_tundra_nodes": 0,
+          "build": 7
+        },
+        "ConfigIndex": 0,
+        "SubVariantIndex": 0,
+        "AlwaysNodes": []
+      }
+    ]
+  },
+  "BuildTitle": "",
+  "Identifier": "artifacts/buildprogram/tundra_buildprogram.dag.json",
+  "RelativePathToRoot": "../.."
+}

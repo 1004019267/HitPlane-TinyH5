@@ -1,0 +1,470 @@
+/**
+
+@component
+@memberof entities.game.BulletGroup
+@name Component
+*/
+/**
+
+@component
+@memberof entities.game.EnemyGroup
+@name Component
+*/
+/**
+
+@component
+@memberof entities.game.ExplosionGroup
+@name Component
+*/
+/**
+
+@component
+@memberof entities.game.MainGroup
+@name Component
+*/
+/**
+
+@component
+@memberof game
+@name Boundaries
+*/
+/**
+
+@member {float}
+@memberof game.Boundaries
+@name minX
+*/
+/**
+
+@member {float}
+@memberof game.Boundaries
+@name maxX
+*/
+/**
+
+@member {float}
+@memberof game.Boundaries
+@name minY
+*/
+/**
+
+@member {float}
+@memberof game.Boundaries
+@name maxY
+*/
+/**
+
+@component
+@memberof game
+@name ChangeOverTime
+*/
+/**
+
+@member {float}
+@memberof game.ChangeOverTime
+@name changePerSecond
+*/
+/**
+
+@component
+@memberof game
+@name EnemyTag
+*/
+/**
+
+@component
+@memberof game
+@name Laser
+*/
+/**
+
+@member {float}
+@memberof game.Laser
+@name speed
+*/
+/**
+
+@component
+@memberof game
+@name MoveSpeed
+*/
+/**
+
+@member {float}
+@memberof game.MoveSpeed
+@name speed
+*/
+/**
+
+@component
+@memberof game
+@name MoveWithInput
+*/
+/**
+
+@component
+@memberof game
+@name PlayerTag
+*/
+/**
+
+@component
+@memberof game
+@name ScrollingBackground
+*/
+/**
+
+@member {float}
+@memberof game.ScrollingBackground
+@name speed
+*/
+/**
+
+@member {float}
+@memberof game.ScrollingBackground
+@name threshold
+*/
+/**
+
+@member {float}
+@memberof game.ScrollingBackground
+@name distance
+*/
+/**
+
+@component
+@memberof game
+@name Spawner
+*/
+/**
+
+@member {float}
+@memberof game.Spawner
+@name time
+*/
+/**
+
+@member {float}
+@memberof game.Spawner
+@name delay
+*/
+/**
+
+@member {bool}
+@memberof game.Spawner
+@name isPaused
+*/
+/**
+
+@member {string}
+@memberof game.Spawner
+@name spawnedGroup
+*/
+/**
+
+@component
+@memberof ut.Core2D.layers
+@name Default
+*/
+/**
+
+@component
+@memberof ut.Core2D.layers
+@name TransparentFX
+*/
+/**
+
+@component
+@memberof ut.Core2D.layers
+@name IgnoreRaycast
+*/
+/**
+
+@component
+@memberof ut.Core2D.layers
+@name Water
+*/
+/**
+
+@component
+@memberof ut.Core2D.layers
+@name UI
+*/
+/**
+
+@component
+@memberof ut.Core2D.layers
+@name PostProcessing
+*/
+/**
+
+@component
+@memberof ut.Core2D.layers
+@name Cutscene
+*/
+/**
+
+@component
+@memberof ut.EditorExtensions
+@name AssetReferenceAnimationClip
+*/
+/**
+
+@member {string}
+@memberof ut.EditorExtensions.AssetReferenceAnimationClip
+@name guid
+*/
+/**
+
+@member {int64}
+@memberof ut.EditorExtensions.AssetReferenceAnimationClip
+@name fileId
+*/
+/**
+
+@member {int32}
+@memberof ut.EditorExtensions.AssetReferenceAnimationClip
+@name type
+*/
+/**
+
+@component
+@memberof ut.EditorExtensions
+@name AssetReferenceAudioClip
+*/
+/**
+
+@member {string}
+@memberof ut.EditorExtensions.AssetReferenceAudioClip
+@name guid
+*/
+/**
+
+@member {int64}
+@memberof ut.EditorExtensions.AssetReferenceAudioClip
+@name fileId
+*/
+/**
+
+@member {int32}
+@memberof ut.EditorExtensions.AssetReferenceAudioClip
+@name type
+*/
+/**
+
+@component
+@memberof ut.EditorExtensions
+@name AssetReferenceSprite
+*/
+/**
+
+@member {string}
+@memberof ut.EditorExtensions.AssetReferenceSprite
+@name guid
+*/
+/**
+
+@member {int64}
+@memberof ut.EditorExtensions.AssetReferenceSprite
+@name fileId
+*/
+/**
+
+@member {int32}
+@memberof ut.EditorExtensions.AssetReferenceSprite
+@name type
+*/
+/**
+
+@component
+@memberof ut.EditorExtensions
+@name AssetReferenceSpriteAtlas
+*/
+/**
+
+@member {string}
+@memberof ut.EditorExtensions.AssetReferenceSpriteAtlas
+@name guid
+*/
+/**
+
+@member {int64}
+@memberof ut.EditorExtensions.AssetReferenceSpriteAtlas
+@name fileId
+*/
+/**
+
+@member {int32}
+@memberof ut.EditorExtensions.AssetReferenceSpriteAtlas
+@name type
+*/
+/**
+
+@component
+@memberof ut.EditorExtensions
+@name AssetReferenceTexture2D
+*/
+/**
+
+@member {string}
+@memberof ut.EditorExtensions.AssetReferenceTexture2D
+@name guid
+*/
+/**
+
+@member {int64}
+@memberof ut.EditorExtensions.AssetReferenceTexture2D
+@name fileId
+*/
+/**
+
+@member {int32}
+@memberof ut.EditorExtensions.AssetReferenceTexture2D
+@name type
+*/
+/**
+
+@component
+@memberof ut.EditorExtensions
+@name AssetReferenceTileBase
+*/
+/**
+
+@member {string}
+@memberof ut.EditorExtensions.AssetReferenceTileBase
+@name guid
+*/
+/**
+
+@member {int64}
+@memberof ut.EditorExtensions.AssetReferenceTileBase
+@name fileId
+*/
+/**
+
+@member {int32}
+@memberof ut.EditorExtensions.AssetReferenceTileBase
+@name type
+*/
+/**
+
+@component
+@memberof ut.EditorExtensions
+@name AssetReferenceTMP_FontAsset
+*/
+/**
+
+@member {string}
+@memberof ut.EditorExtensions.AssetReferenceTMP_FontAsset
+@name guid
+*/
+/**
+
+@member {int64}
+@memberof ut.EditorExtensions.AssetReferenceTMP_FontAsset
+@name fileId
+*/
+/**
+
+@member {int32}
+@memberof ut.EditorExtensions.AssetReferenceTMP_FontAsset
+@name type
+*/
+/**
+
+@component
+@memberof ut.EditorExtensions
+@name CameraCullingMask
+*/
+/**
+
+@member {int32}
+@memberof ut.EditorExtensions.CameraCullingMask
+@name mask
+*/
+/**
+
+@component
+@memberof ut.EditorExtensions
+@name EntityLayer
+*/
+/**
+
+@member {int32}
+@memberof ut.EditorExtensions.EntityLayer
+@name layer
+*/
+/**
+
+@component
+@memberof game
+@name EnemyBehaviorFilter_State
+*/
+/**
+
+@member {bool}
+@memberof game.EnemyBehaviorFilter_State
+@name initialized
+*/
+/**
+
+@member {bool}
+@memberof game.EnemyBehaviorFilter_State
+@name enabled
+*/
+/**
+
+@member {bool}
+@memberof game.EnemyBehaviorFilter_State
+@name onEnableCalled
+*/
+/**
+
+@member {bool}
+@memberof game.EnemyBehaviorFilter_State
+@name onDisableCalled
+*/
+/**
+
+@system
+@memberof game
+@name InputMovementSystemJS
+*/
+/**
+
+@system
+@memberof game
+@name LaserSystemJS
+*/
+/**
+
+@system
+@memberof game
+@name PlayerCollisionSystemJS
+*/
+/**
+
+@system
+@memberof game
+@name SpawnSystemJS
+*/
+/**
+
+@system
+@memberof game
+@name TimeJS
+*/
+/**
+
+@system
+@memberof game
+@name EnemyBehaviorFilter_OnEntityEnableJS
+*/
+/**
+
+@system
+@memberof game
+@name EnemyBehaviorFilter_OnEntityUpdateJS
+*/
+
+
